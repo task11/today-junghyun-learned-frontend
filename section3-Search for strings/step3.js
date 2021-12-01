@@ -1,19 +1,17 @@
 
 function solution(s) {
-  var answer = "YES";
-  var n = s.length;
-  s = s.toLowerCase();
+  var answer = "";
 
-  for (let i = 0; i < n / 2; i++) {
-    if (s.charCodeAt(i) >= 97 && s.charCodeAt(i) <= 122) {
-      if (s[i] !== s[n - i - 1]) {
-        answer = "NO";
-      }
-    }
+  answer = Number(s.toLowerCase().replace(/[a-z]/g, ""));
+
+  if (answer > 1000000000) {
+    answer = "자연수 초과"
   }
+
+
   return answer;
 }
 
-const str = "tge0a1h205er"
+const str = "g0en2T0s8eSoft"
 console.log(solution(str));
 
