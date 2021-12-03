@@ -1,26 +1,21 @@
-function solution(s1, s2) {
-  var answer = "";
-  let list = [];
-  let pos = 0;
-
-  while (true) {
-    let position = s1.indexOf(s2, pos)
-    if (position === -1) break;
-    list.push(position);
-    pos = position + 1;
+function solution(s) {
+  var answer = [];
+  let n = 1;
+  let maxN = [];
+  for (let i = 0; i < s.length; i++) {
+    if (s[i] === s[i + 1]) {
+      n += 1;
+    } else {
+      maxN.push(s[i]);
+      if (n !== 1) {
+        maxN.push(n);
+      }
+      n = 1;
+    }
   }
-
-  for (let i = 0; i < list.length; i++) {
-
-  }
-
+  answer = maxN.join("");
   return answer;
 }
 
-const str1 = "teachermode"
-const str2 = "e"
-console.log(solution(str1, str2));
-// ▣ 입력예제 1
-// teachermode e
-// ▣ 출력예제 1
-// 1 0 1 2 1 0 1 2 2 1 0
+const str = "KKHSSSSSSSE"
+console.log(solution(str));
