@@ -1,25 +1,20 @@
 
 function solution(a, list) {
-    var answer = 0;
-    let sum = 0;
-    let max = 0;
-    let maxIndex = 0;
-    let maxList = [];
-    let sumList = [];
+    let answer, max = Number.MIN_SAFE_INTEGER;
     for (let x of list) {
-        x = String(x);
-        for (var i = 0; i < x.length; i++) {
-            sum += Number(x[i])
+        let sum = 0, tmp = x;
+        while (tmp) {
+            sum += (tmp % 10);
+            tmp = Math.floor(tmp / 10);
         }
         if (sum > max) {
             max = sum;
-            maxIndex = i;
+            answer = x;
         }
-        sumList.push(maxIndex);
-        sum = 0;
+        else if (sum === max) {
+            if (x > answer) answer = x;
+        }
     }
-    console.log(sumList);
-
     return answer;
 }
 
@@ -30,5 +25,6 @@ console.log(solution(7, [128, 460, 603, 40, 521, 137, 123]));
 // ▣ 입력예제 1
 // 7
 // 128 460 603 40 521 137 123
+// 11   10  9   4  8   11  6
 // ▣ 출력예제 1
 // 137
