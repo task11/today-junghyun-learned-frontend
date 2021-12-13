@@ -1,17 +1,28 @@
 function solution(arr) {
-    let answer = [];
-    for (let x of arr) {
-        let res = 0;
-        while (x) {
-            let t = x % 10;
-            res = res * 10 + t;
-            x = parseInt(x / 10);
+
+    let answer = 0;
+    m = arr.length;
+    n = arr[0].length;
+    for (let i = 1; i <= n; i++) {
+        for (let j = 1; j <= n; j++) {
+            let cnt = 0;
+            for (let k = 0; k < m; k++) {
+                let pi = pj = 0;
+                for (let s = 0; s < n; s++) {
+                    if (arr[k][s] === i) pi = s;
+                    if (arr[k][s] === j) pj = s;
+                }
+                if (pi < pj) cnt++;
+            }
+            if (cnt === m) answer++;
         }
-        if (isPrime(res)) answer.push(res);
     }
+
+
+
     return answer;
 }
 
-let arr = [32, 55, 62, 20, 250, 370, 200, 30, 100];
+let arr = [[3, 4, 1, 2], [4, 3, 2, 1], [3, 1, 4, 2]];
 console.log(solution(arr));
 
