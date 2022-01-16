@@ -1,5 +1,19 @@
-## 자바스크립트의 호이스팅(Hoisting)
+## 변수 호이스팅 (Variable Hoisting) ##
 
--------------
-+ 호이스팅(Hoisting) 이란?
-  + 변수의 선언문이 코드의 선두로 끌어 올려진 것처럼 동작하는 자바스크립트 고유의 특징
+변수 선언문이 코드의 선두로 끌어 올려진 것처럼 동작하는 자바스크립트 교유의 특징.
+
+
+Example Code:
+
+```javascript
+console.log("Score?", score);
+var score = 60;
+// result = Score? undefined
+
+
+//런타임 환경
+var score = undefined; // Hoisting
+console.log("Score?", score);
+score = 60;
+
+```
