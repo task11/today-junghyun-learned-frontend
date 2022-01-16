@@ -1,6 +1,6 @@
 ## 식별자 네이밍 규칙 (Naming Convention) ##
 
-식별자(identifier)는 어떤 값을 구별해서 식별핸래 수 있는 고유한 이름을 말한다.
+식별자(identifier)는 어떤 값을 구별해서 식별해낼 수 있는 고유한 이름을 말한다.
 식별자는 아래와 같은 규칙을 준수해야 한다.
 
   + 식별자는 특수문자를 제외한 문자,숫자,언더스코어(_),달러 기호($)를 포함할 수 있다.
@@ -28,7 +28,7 @@ var FirstName;
 // 헝가리언 케이스(typeHungarianCase)
 var strFirstName; // type + identifier
 var $elem = document.getElementById('myId'); // DOM 노드
-var observable$ = fromEvent(document, 'click'); // RxJs 옵저버블 
+var observable$ = fromEvent(document, 'click'); // RxJs 옵저버블
 
 ```
 
