@@ -6,3 +6,4 @@
 + **JavaScript**
   1) Variable Hoisting
   2) Naming Convention
+  3) Literal
