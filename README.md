@@ -1,7 +1,8 @@
-# todayILearned
+# Today I Learned #
 
-## 오늘 내 공부한 것들에 대한 정리 & 메모
+### _오늘 공부한 것들에 대한 정리 & 메모_ ###
 
 ------------
-+ JavaScript
++ **JavaScript**
   1) Variable Hoisting
+  2) Naming Convention
