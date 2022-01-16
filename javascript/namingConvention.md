@@ -25,7 +25,7 @@ var first_name;
 // 파크칼 케이스(PascalCase)
 var FirstName;
 
-// 헝카리언 케이스(typeHungarianCase)
+// 헝가리언 케이스(typeHungarianCase)
 var strFirstName; // type + identifier
 var $elem = document.getElementById('myId'); // DOM 노드
 var observable$ = fromEvent(document, 'click'); // RxJs 옵저버블 
