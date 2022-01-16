@@ -7,12 +7,12 @@
   + 단, 식별자는 특수문자를 제외한 문자, 언더스코어(_), 달러 기호($)로 시작해야 한다. 숫자로 시작하는 것은 허용하지 않는다.
   + 예약어는 식별자로 사용할 수 없다.
 
-예약어(Reserved word):
+**예약어(Reserved word) :**
 
 ![initial](https://user-images.githubusercontent.com/89209626/149662724-5a254e70-ad7a-4316-b38e-b65434e82808.png)
 
 
-Example Code:
+**Example Code :**
 
 ```javascript
 
