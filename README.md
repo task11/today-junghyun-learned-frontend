@@ -4,6 +4,7 @@
 
 ------------
 + **JavaScript**
-  1) Variable Hoisting
-  2) Naming Convention
-  3) Literal
+  1) Variable Hoisting(변수 호이스팅)
+  2) Naming Convention(네이망 규칙)
+  3) Literal(리터럴)
+  4) Expression(표현식)
