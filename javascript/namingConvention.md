@@ -1,4 +1,4 @@
-## 식별자 네이밍 규칙 (Naming Convention) ##
+# 식별자 네이밍 규칙 (Naming Convention) #
 
 식별자(identifier)는 어떤 값을 구별해서 식별해낼 수 있는 고유한 이름을 말한다.
 식별자는 아래와 같은 규칙을 준수해야 한다.

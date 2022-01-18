@@ -1,4 +1,4 @@
-## 문 (Statement) ##
+# 문 (Statement) #
 
 문(statement)은 프로그램을 구성하는 기본 단위이자 최소 실행 단위이다.
 
