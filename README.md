@@ -10,3 +10,4 @@
   4) Expression(표현식)
   5) Statement(문)
   6) Data Type(데이터 타입)
+  7) The Need for Data Types(데이터 타입의 필요성)
