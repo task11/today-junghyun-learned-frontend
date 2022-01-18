@@ -9,3 +9,4 @@
   3) Literal(리터럴)
   4) Expression(표현식)
   5) Statement(문)
+  6) Data Type(데이터 타입)
