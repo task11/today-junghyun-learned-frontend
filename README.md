@@ -12,3 +12,4 @@
   6) Data Type(데이터 타입)
   7) The Need for Data Types(데이터 타입의 필요성)
   8) Operator(연산자)
+  9) Short-Circuit Evaluation(단축 평가)
