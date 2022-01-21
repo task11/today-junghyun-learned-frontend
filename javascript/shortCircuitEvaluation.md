@@ -13,8 +13,17 @@
 
 'Cat'은 Truthy 값이므로 true로 평가된다.
 
+### 논리합(||) 단축평가
+두 개의 피연산자 중 하나만 true로 평가되어도 true를 반환한다. 
+``` javascript
+'Cat' || 'Dog' // -> "Cat"
+```
 
 
 
-
-
+### 논리곱(&&) 단축평가
+두 개의 피연산자가 true로 평가되어야 true를 반환한다. 
+``` javascript
+'Cat' && 'Dog' // -> "Cat"
+false && 'Dog' // -> false
+```
