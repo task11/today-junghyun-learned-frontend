@@ -10,4 +10,6 @@
   + 2022-01-18 : Statement(문)
   + 2022-01-19 : Data Type(데이터 타입), The Need for Data Types(데이터 타입의 필요성)
   + 2022-01-20 : Operator(연산자), Short-Circuit Evaluation(단축 평가)
-  + 2022-01-21 : Short-Circuit Evaluation(단축 평가)
+  + 2022-01-21 : Short-Circuit Evaluation(단축 평가) 2
+  + 2022-01-22 : Short-Circuit Evaluation(단축 평가) 3
+  + 2022-01-23 : Short-Circuit Evaluation : Opational Chaning and Nullish Coalescing(단축 평가 : 옵셔널 체이닝, 널 병합 연산자)
