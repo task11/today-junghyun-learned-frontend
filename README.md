@@ -10,3 +10,4 @@
   + 2022-01-18 : Statement(문)
   + 2022-01-19 : Data Type(데이터 타입), The Need for Data Types(데이터 타입의 필요성)
   + 2022-01-20 : Operator(연산자), Short-Circuit Evaluation(단축 평가)
+  + 2022-01-21 : Short-Circuit Evaluation(단축 평가)
