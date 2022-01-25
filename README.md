@@ -14,6 +14,6 @@
   + 2022-01-22 : Short-Circuit Evaluation(단축 평가) 3
   + 2022-01-23 : Short-Circuit Evaluation : Opational Chaning and Nullish Coalescing(단축 평가 : 옵셔널 체이닝, 널 병합 연산자)
   + 2022-01-24 : Computed Property Name(계산된 프로퍼티 이름), Shallow Copy & Deep Copy(얕은 복사와 깊은 복사)
-  + 2022-01-25 : About Function(함수에 대하여) & Scope(스코프-유효범위)
+  + 2022-01-25 : About Function(함수에 대하여) & Scope(스코프-유효범위) & The Problem of Global Variable(전역변수의 문제점)
 
 + **HTML & CSS**
