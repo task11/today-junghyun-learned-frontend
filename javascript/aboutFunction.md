@@ -1,5 +1,7 @@
 # About Function #
 
+#
+
 ## 함수 정의 ##
 
 **Example Code (함수 선언문) :**
@@ -21,6 +23,8 @@ const add = new Function('x', 'y', 'return x + y');
 const add = (x, y) => x + y;
 ```
 
+#
+
 ### 일반 함수 ###
 
 **Example Code (일반 함수) :**
@@ -34,6 +38,9 @@ function myFn(x) {
 
 const result = myFn(10);
 ```
+
+#
+
 
 ### 익명 함수 ###
 함수 명을 지정하지 않고 변수에 대입하여 사용하는 함수 
@@ -50,6 +57,8 @@ const myFnV2 = function () {
 myFnV2();
 ```
 
+#
+
 ### 즉시 실행 함수 (IIFE) ###
 코드에 단 한번 실행되는 함수(단 한번만 호출)
 
@@ -62,6 +71,7 @@ myFnV2();
 
 })();
 ```
+#
 
 ### Arrow Function (화살표 함수) ###
 이름을 줄 수 없는 익명 함수가 기본 값 → 반드시 변수에 넣어줘야한다.
@@ -89,6 +99,7 @@ const sumV2 = (a, b, ...args) ⇒ {
 
 const ten = x ⇒ 100+x;
 ```
+#
 
 ### 생성기 함수 ###
 
@@ -115,6 +126,7 @@ g.next();
 
 g.next();
 ```
+#
 
 ### Recursive Function (재귀 함수) ###
 
@@ -131,6 +143,7 @@ g.next();
     return n * factorial(n-1);
   }
 ```
+#
 
 ### Callback Function (콜백 함수) ###
 
@@ -217,6 +230,7 @@ res = [1, 2, 3].reduce(function (acc, cur) {
 
 console.log(res);
 ```
+#
 
 
 ### 비동기 함수 ###
@@ -247,6 +261,7 @@ myFnV2.call(null, 10, 20, 30);
 // 특수한 용도일 때,  첫 번째 인자는 context, 두 번째 인자는 함수 파라미터의 배열
 myFnV2.apply(null, [10, 20, 30]); 
 ```
+#
 
 ## 가변 인자를 처리하는 방식 ##
 
@@ -271,6 +286,7 @@ const abcSum = sum(10, 20, 30);
 
 const abcSum = sum(10, 20, 30, 40);
 ```
+#
 
 
 ## 참조에 의한 전달과 외부 상태의 변경 ##
