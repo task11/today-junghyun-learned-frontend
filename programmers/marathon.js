@@ -19,7 +19,7 @@ function solution(participant, completion) {
 console.log(solution(["mislav", "stanko", "mislav", "ana"], ["stanko", "ana", "mislav"]));
 
 
-//best answer
+// answer
 
 // function solution(participant, completion) {
 //     const map = new Map();
