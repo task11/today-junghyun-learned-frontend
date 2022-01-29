@@ -16,5 +16,5 @@
   + 2022-01-24 : Computed Property Name(계산된 프로퍼티 이름), Shallow Copy & Deep Copy(얕은 복사와 깊은 복사)
   + 2022-01-25 : About Function(함수에 대하여) & Scope(스코프-유효범위) & The Problem of Global Variable(전역변수의 문제점)
   + 2022-01-28 : Property Attribute(프로퍼티 어트리뷰트)
-
+  + 2022-01-29 : Constructor Function(생성자 함수에 의한 객체 생성)
 + **HTML & CSS**
