@@ -386,3 +386,136 @@
 
 // person.address.city = 'Yeosu'; // 동결로 변경 불가능
 // console.log(person);
+
+// // 인스턴스 생성 과정
+// function Circle(radius) {
+//   // 1.암묵적으로 인스턴스가 생성되고 this에 바인딩된다.
+//   console.log(this);
+
+//   this.radius = radius;
+//   this.getDiameter = function () {
+//     return 2 * this.radius;
+//   }
+
+//   return {};
+// }
+
+// const circle1 = new Circle(5);
+// console.log(circle1);
+// //console.log(circle1.getDiameter());
+
+
+// function call() {
+// };
+
+// call.prop = 10;
+
+// call.method = function () {
+//   console.log(this.prop);
+// };
+
+// call.method();
+
+// console.log(Object.getOwnPropertyDescriptors(call));
+
+
+// // 일반 함수 정의: 함수 선언문, 표현식
+// function ex() { }
+// const exVal1 = function () { };
+// // 프로퍼티 x의 값으로 할당된 것은 일반 함수로 정의된 함수다. (메서드로 인정 X)
+// const exVal2 = {
+//   x: function () { }
+// };
+
+// // 일반 함수로 정의된 함수만이 constructor
+// new ex();       // ex {}
+// new exVal1();   // exVal1 {}
+// new exVal2.x(); // x {}
+
+// // 화살표 함수 정의
+// const arrow = () => { };
+
+// new arrow(); // TypeError: arrow is not a constructor
+
+// // 메서드 정의 : ES6의 메서드 축약 표현만 메서드로 인정.
+// const obj = {
+//   x() { }
+// };
+
+// new obj.x(); // TypeError: obj.x is not a constructor
+
+
+// // 생성자 함수로서 정의하지않은 일반 함수
+// function add(x, y) {
+//   return x + y;
+// }
+
+// // 생성자 함수로서 정의하지 않은 일반 함수를 new 연산자와 호출
+// let inst = new add(5, 6);
+
+// // 함수가 객체를 반환하지 않았으므로 반환문이 무시, 빈 객체를 반환한다. -> 원시값 반환 시에 무시된다.
+// console.log(inst); // add {}
+
+// // 객체를 반환하는 일반 함수
+// function createUser(name, role) {
+//   return { name, role };
+// }
+
+// // 일반 함수를 new 연산자와 호출
+// inst = new createUser('kim', 'dba');
+// // 함수가 생성한 객체를 반환
+// console.log(inst); // { name: 'kim', role: 'dba' }
+
+// // 생성자 함수
+// function Circle(radius) {
+//   this.radius = radius;
+//   this.getDiameter = function () {
+//     return 2 * this.radius;
+//   };
+// }
+
+// // new 연산자 없이 생성자 함수를 호출
+// const circle = Circle(5);
+// console.log(circle); // undefined
+
+// // 일반 함수 내부의 this는 전역 객체 window를 가리킨다. -> this가 전역 객체 window와 바인딩 된다.
+// console.log(radius);
+// console.log(getDiameter());
+
+// circle.getDiameter(); // TypeError: Cannot read property 'getDiameter' of undefined
+
+// // 생성자 함수
+// function Circle(radius) {
+//   // 이 함수가 new 연산자와 함께 호출되지 않았다면 new.target은 undefined이다.
+//   if (!new.target) {
+//     // new 연산자와 함께 생성자 함수를 재귀 호출하여 생성된 인스턴스를 반환한다.
+//     return new Circle(radius);
+//   }
+//   this.radius = radius;
+//   this.getDiameter = function () {
+//     return 2 * this.radius;
+//   };
+// }
+
+// const circle = Circle(5);
+// console.log(circle.getDiameter());
+
+// Scope-Safe Constructor Pattern
+function Circle(radius) {
+  // 생성자 함수가 new 연산자와 함께 호출되면 함수의 선두에서 빈 객체를 생성하고
+  // this에 바인딩한다. 이때 this와 Circle은 프로토타입에 의해 연결된다.
+
+  // 이 함수가 new 연산자와 함께 호출되지 않았다면 이 시점의 this는 전역 객체 window를 가리킨다.
+  // -> this와 Circle은 프로토타입에 의해 연결되지 않는다.
+  if (!(this instanceof Circle)) {
+    // new 연산자와 함께 생성자 함수를 재귀 호출하여 생성된 인스턴스를 반환한다.
+    return new Circle(radius);
+  }
+  this.radius = radius;
+  this.getDiameter = function () {
+    return 2 * this.radius;
+  };
+}
+
+const circle = Circle(5);
+console.log(circle.getDiameter());
