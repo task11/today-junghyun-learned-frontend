@@ -17,4 +17,5 @@
   + 2022-01-25 : About Function(함수에 대하여) & Scope(스코프-유효범위) & The Problem of Global Variable(전역변수의 문제점)
   + 2022-01-28 : Property Attribute(프로퍼티 어트리뷰트)
   + 2022-01-29 : Constructor Function(생성자 함수에 의한 객체 생성)
+  + 2022-01-30 : First-Class Object(일급 객체)
 + **HTML & CSS**
