@@ -586,3 +586,215 @@
 // console.log(sum());
 // console.log(sum(1, 2));
 // console.log(sum(1, 2, 3));
+
+// 생성자 함수
+// function Circle(radius) {
+//   this.radius = radius;
+// }
+
+// // Circle 생성자 함수가 생성한 모든 인스턴스가 getArea 메서드를 공유해서 사용할 수 있도록 프로토타입에 추가한다.
+// // 프로토타입은 Circle 생성자 함수의 prototype 프로퍼티에 바인딩되어 있다.
+// Circle.prototype.getArea = function () {
+//   return Math.PI * this.radius ** 2;
+// };
+
+// // 인스턴스 생성
+// const circle1 = new Circle(1);
+// const circle2 = new Circle(2);
+
+// // Circle 생성자 함수가 생성한 모든 인스턴스는 부모 객체 역할을 하는 프로토타입(Circle.prototype)으로부터 getArea 메서드를 상속받는다.
+// // getAread 메서드는 하나만 생성되어 모든 인스턴스가 공유한다(중복 코드)
+// console.log(circle1.getArea === circle2.getArea) // true
+
+// console.log(circle1.__proto__);
+
+// const Person = (function () {
+//   // 생성자 함수
+//   function Person(name) {
+//     this.name = name;
+//   }
+
+//   // 프로토타입 메서드
+//   Person.prototype.sayHello = function () {
+//     console.log(`Hi~ My name is ${this.name}`);
+//   };
+
+//   // 생성자 함수 반환
+//   return Person;
+// }());
+
+// const me = new Person('Kim');
+
+// // 인스턴스 메서드
+// me.sayHello = function () {
+//   console.log(`Hello World i'm ${this.name}`);
+// };
+
+// // 인스턴스 메서드가 호출된다. 프로토타입 메서드는 인스턴스 메서드에 의해 가려진다.
+// me.sayHello(); // Hello World i'm Kim
+
+// function Person(name) {
+//   this.name = name;
+// }
+
+// const me = new Person('kim');
+
+// const parent = {};
+
+// Object.setPrototypeOf(me, parent);
+
+// console.log(Person.prototype === parent); // false
+// console.log(parent.constructor); // Object
+
+// console.log(me instanceof Person); // false
+
+// console.log(me instanceof Object); // true
+
+// console.log(parent instanceof Person); // false
+
+// Person.prototype = parent; // parent 객체를 Person 생성자 함수의 prototype 프로퍼티에 바인딩한다.
+
+// console.log(me instanceof Person); // true
+// console.log(Person.prototype === parent); // true
+
+
+// function Person(name) {
+//   this.name = name;
+// }
+
+// const me = new Person();
+
+// function isInstanceof(instance, constructor) {
+//   // 프로토타입 획득
+//   const prototype = Object.getPrototypeOf(instance);
+
+//   // 재귀 탈출 조건
+//   // prototype이 null -> 프로토타입 체인의 종점
+//   if (prototype === null) return false;
+
+//   // 프로토타입이 생성자 함수의 prototype 프로퍼티에 바인딩된 객체라면 true를 반환.
+//   // 그렇지 않으면 재귀 호출로 프로토타입 체인상 상위 프로토타입으로 이동하여 확인.
+//   return prototype === constructor.prototype || isInstanceof(prototype, constructor);
+//   // 단축 평가
+// }
+
+// console.log(isInstanceof(me, Person));
+// console.log(isInstanceof(me, Object));
+
+// // Object.create 직접 상속
+// // 프로토타입이 null인 객체를 생성한다. 생성된 객체는 프로토타입 체인의 종점에 위치한다.
+// // obj -> null
+// let obj = Object.create(null);
+// console.log(Object.getPrototypeOf(obj) === null); // true
+// // Object.prototype을 상속받지 못한다.
+// //console.log(obj.toString()); // TypeError: obj.toString is not a function
+
+// // obj -> Object.prototype -> null
+// // obj = {}; 와 동일하다.
+// obj = Object.create(Object.prototype);
+// // Objet.prototype를 상속받는다.
+// console.log(Object.getPrototypeOf(obj) === Object.prototype); // true
+
+// // obj -> Object.prototype -> null
+// // obj = {x: 1}; 와 동일하다.
+// obj = Object.create(Object.prototype, {
+//   x: { value: 1, writable: true, enumerable: true, configurable: true }
+// });
+// // 위 코드는 아래와 동일
+// // obj = Object.create(Object.prototype);
+// // obj.x = 1;
+// console.log(obj.x);
+// console.log(Object.getPrototypeOf(obj) === Object.prototype); // true
+
+// const myProto = { x: 10 };
+// // obj -> myProto -> Object.prototype -> null
+// obj = Object.create(myProto);
+// console.log(obj.x);
+// console.log(Object.getPrototypeOf(obj) === myProto); // true
+
+// // 생성자 함수
+// function Person(name) {
+//   this.name = name;
+// }
+
+// // obj -> Person.prototype -> Object.prototype -> null
+// // obj = new Person('Kim')과 동일
+// obj = Object.create(Person.prototype);
+// obj.name = 'Kim';
+// console.log(obj.name); // Kim
+// console.log(Object.getPrototypeOf(obj) === Person.prototype); // true
+
+// const myProto = { x: 10 };
+
+// // 객체 리터럴에 의해 객체를 생성하면서 프로토타입을 지정하여 직접 상속받기
+// const obj = {
+//   y: 20,
+//   // 객체 직접 상속
+//   // obj -> myProto -> Object.prototype -> null
+//   __proto__: myProto
+// };
+
+// /* 위 코드는 아래오 ㅏ동일
+// const obj = Object.create(myProtom {
+//   y: {value: 20, ......}
+// })
+// */
+
+// console.log(obj.x, obj.y); // 10, 20
+// console.log(Object.getPrototypeOf(obj) === myProto); // true
+
+// // 생성자 함수
+// function Person(name) {
+//   this.name = name;
+// }
+
+// // 프로토타입 메서드
+// Person.prototype.sayHello = function () {
+//   console.log(`Hi My name is ${this.name}`);
+// };
+
+// // 정적 프로퍼티
+// Person.staticProp = 'static prop';
+
+// // 정적 메서드
+// Person.staticMethod = function () {
+//   console.log('static method');
+// }
+
+// const me = new Person('Kim');
+
+// Person.staticMethod();
+
+// let a = Person.staticProp;
+
+// console.log(a);
+
+// // 정적 메서드, 프로퍼티는 생성자 함수가 생성한 인스턴스로 호출이 불가하다.
+// // me.staticMethod(); // TypeError: me.staticMethod is not a function
+
+// const person = {
+//   name: 'Kim',
+//   region: 'Seoul'
+// }
+
+// console.log('name' in person); // true
+
+// console.log('toString' in person); // true
+
+// const person = {
+//   name: 'Kim',
+//   region: 'Seoul'
+// }
+
+// console.log(Reflect.has(person, 'name')); // true
+
+// console.log(Reflect.has(person, 'toString')); // true
+
+const person = {
+  name: 'kim',
+  region: 'Seoul'
+};
+
+for (const key in person) {
+  console.log(key + ': ' + person[key]);
+}
