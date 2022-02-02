@@ -790,11 +790,202 @@
 
 // console.log(Reflect.has(person, 'toString')); // true
 
+// const person = {
+//   name: 'kim',
+//   region: 'Seoul'
+// };
+
+// for (const key in person) {
+//   console.log(key + ': ' + person[key]);
+// }
+
+// const foo = function () {
+//   console.dir(this);
+// }
+
+// foo();
+
+// const obj = { foo };
+// obj.foo();
+
+// new foo(); // foo {}
+
+// const bar = { name: 'bar' };
+
+// foo.call(bar);
+// foo.apply(bar);
+// foo.bind(bar)();
+
+// function foo() {
+//   console.log("foo ", this); // window or global
+//   function bar() {
+//     console.log("bar ", this); // window or global
+//   }
+//   bar();
+// }
+
+// foo();
+
+// var value = 1;
+
+// const obj = {
+//   value: 100,
+//   foo() {
+//     // this 바인딩(obj)을 번수 that에 임시 할당
+//     const that = this;
+
+//     // 콜백 함수 내부에서 this 대신 that 참조
+//     setTimeout(function () {
+//       console.log(that.value);
+//     }, 100);
+//   }
+// };
+
+// obj.foo();
+
+// var value = 1;
+
+// const obj = {
+//   value: 100,
+//   foo() {
+//     // 콜백 함수에 this 바인딩
+//     setTimeout(function () {
+//       console.log(this.value);
+//     }.bind(this), 100);
+//   }
+// };
+
+// obj.foo();
+
+
+// var value = 1;
+
+// const obj = {
+//   value: 100,
+//   foo() {
+//     setTimeout(() => console.log(this.value), 100);
+//   }
+// };
+
+// obj.foo();
+
+// const person = {
+//   name: 'Kim',
+//   getName() {
+//     // 호출한 객체에 바인딩
+//     return this.name;
+//   }
+// };
+
+// // getName을 호출한 객체는 person이다.
+// console.log(person.getName()); // Kim
+
+// const anotherPerson = {
+//   name: 'Bae'
+// };
+
+// // getName 메서드를 anotherPerson 객체 메서드로 할당
+// anotherPerson.getName = person.getName;
+
+// console.log(anotherPerson.getName()); // Bae
+
+// // getName 메서드를 변수에 할당.
+// const getName = person.getName;
+
+// console.log(getName()); // undefined ES6, '' ES5(전역 객체 바인딩)
+
+// function Person(name) {
+//   this.name = name;
+// }
+
+// Person.prototype.getName = function () {
+//   return this.name;
+// };
+
+// const me = new Person('Kim');
+
+// console.log(me.getName()); // Kim
+
+// Person.prototype.name = 'Bae';
+
+// console.log(Person.prototype.getName()); // Bae
+
+
+// // 생성자 함수
+// function Cricle(radius) {
+//   this.radius = radius;
+//   this.getDiameter = function () {
+//     return 2 * this.radius;
+//   };
+// }
+
+// // circle 생성
+// const circle1 = new Cricle(5);
+// const circle2 = new Cricle(10);
+
+// console.log(circle1.getDiameter()); // 10
+// console.log(circle2.getDiameter()); // 20
+
+// const cricle3 = Cricle(150); // 150이 전역객체에 바인딩 된다. window.radius = 150; or global.radius = 150;
+// console.log(radius); // 전역 객체에 바인딩된 radius 출력
+
+// function getThisBinding() {
+//   // console.log(this.a); -> apply / call 로 this 바인딩 시에 1이 출력 ({a : 1}) 객체가 this에 바인딩 돼서
+//   return this;
+// }
+
+// // this로 사용할 객체 선언
+// const thisArg = { a: 1 };
+// console.log(getThisBinding()); // global or window
+
+// // getThisBinding을 호출하면서 인수로 전달할 객체를 그 함수의 this에 바인딩한다.
+// console.log(getThisBinding.apply(thisArg)); // this는 {a: 1}
+// console.log(getThisBinding.call(thisArg)); // this는 {a: 1}
+
+// function getUserName(id) {
+//   if (this.id === id) {
+//     return this.name;
+//   }
+// }
+
+// const userInfo = {
+//   id: 1,
+//   name: 'kim'
+// };
+
+// console.log(getUserName.apply(userInfo, [1])); // Kim
+// console.log(getUserName.call(userInfo, 1)) // Kim
+
+// function convertArgsToArray() {
+//   console.log(arguments); // [Arguments] { '0': 1, '1': 2, '2': 3 }
+
+//   // arguments를 배열로 전환
+//   const arr = Array.prototype.slice.call(arguments);
+
+//   console.log(arr);
+
+//   return arr;
+// }
+
+// convertArgsToArray(1, 2, 3); // [1, 2, 3]
+
+// function getThisBinding() {
+//   return this;
+// }
+
+// // this로 사용할 객체 선언
+// const thisArg = { a: 1 };
+
+// console.log(getThisBinding.bind(thisArg));
+// console.log(getThisBinding.bind(thisArg)()); // {a: 1} 호출 해줘야함
+
 const person = {
-  name: 'kim',
-  region: 'Seoul'
+  name: 'Kim',
+  foo(callback) {
+    setTimeout(callback.bind(this), 100);
+  }
 };
 
-for (const key in person) {
-  console.log(key + ': ' + person[key]);
-}
+person.foo(function () {
+  console.log(`My name is ${this.name}`);
+});

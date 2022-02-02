@@ -18,5 +18,6 @@
   + 2022-01-28 : Property Attribute(프로퍼티 어트리뷰트)
   + 2022-01-29 : Constructor Function(생성자 함수에 의한 객체 생성)
   + 2022-01-30 : First-Class Object(일급 객체)
-  + 2022-01-31 : Prototype(프로토타입)
+  + 2022-01-31 : Prototype(프로토타입) & builtInObject(Global, 빌트인 전역 객체 함수)
+  + 2022-02-01 : this Binding(this 바인딩)
 + **HTML & CSS**
