@@ -155,6 +155,81 @@ input tag의 타입
 **Example Code :**
 ```html
 <form action="ref" method="POST|GET">
+```
 
-  
+#
+
+## audio / video / iframe Tag ##
+
+**Example Code :**
+```html
+<audio src="./root.mp3" loop autoplay controls> </audio>
+
+  <audio>
+    <source src="./root.wav" type="audio/wav" />
+    <source src="./root.mp3" type="audio/mp3" />
+    <source src="./root.ogg" type="audio/ogg" />
+    <p>
+      모든 확장자를 지원하지 않는다면 이 문구가 보입니다.
+    </p>
+  </audio>
+
+  <video src="./root.mp3" loop autoplay controls> </video>
+
+  <video>
+    <source src="./root.mov" type="video/mov" />
+    <source src="./root.mp3" type="video/mp3" />
+    <p>
+      모든 확장자를 지원하지 않는다면 이 문구가 보입니다.
+    </p>
+  </video>
+
+  <iframe>
+    embed 할 html (공유 링크 등으로 생성)
+  </iframe>
+```
+
+#
+
+## abbr Tag ##
+
+약어 태그
+
+**Example Code :**
+```html
+<p>
+  이 병은 <abbr title="Attention Deficit Hyperactivity Disorder">ADHD</abbr> 이다.
+</p>
+```
+
+#
+
+## address Tag ##
+
+연락망 표시 태그 ( 주소 or 연락처 or URL or Email or SNS)
+
+**Example Code :**
+```html
+<address>
+  <h1>김정현</h1>
+  <a href="https://github.com/task11">github</a>
+</address>
+```
+
+#
+
+## pre / code Tag ##
+
+indentation이나 띄워쓰기가 가능한 textarea
+
+**Example Code :**
+```html
+<pre>
+  <code>
+    var name = '김정현';
+    if(name === '김정현'){
+      console.log('hi');
+    }
+  </code>
+</pre>
 ```

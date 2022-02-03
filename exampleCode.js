@@ -1024,4 +1024,4 @@ function foo() {
   bar();
 }
 
-foo();
+foo(); // 6
