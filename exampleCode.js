@@ -979,13 +979,49 @@
 // console.log(getThisBinding.bind(thisArg));
 // console.log(getThisBinding.bind(thisArg)()); // {a: 1} 호출 해줘야함
 
-const person = {
-  name: 'Kim',
-  foo(callback) {
-    setTimeout(callback.bind(this), 100);
-  }
-};
+// const person = {
+//   name: 'Kim',
+//   foo(callback) {
+//     setTimeout(callback.bind(this), 100);
+//   }
+// };
 
-person.foo(function () {
-  console.log(`My name is ${this.name}`);
-});
+// person.foo(function () {
+//   console.log(`My name is ${this.name}`);
+// });
+
+
+// // 전역 변수 선언
+// const x = 1;
+// const y = 2;
+
+// // 함수 정의
+// function foo(a) {
+//   // 지역 변수 선언
+//   const x = 10;
+//   const y = 20;
+
+//   // 메서드 호출
+//   console.log(a + x + y); // 130
+// }
+
+// // 함수 호출
+// foo(100);
+
+
+// // 메서드 호출
+// console.log(x + y); // 3
+
+const x = 1;
+
+function foo() {
+  const y = 2;
+
+  function bar() {
+    const z = 3;
+    console.log(x + y + z);
+  }
+  bar();
+}
+
+foo();
