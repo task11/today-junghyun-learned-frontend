@@ -22,6 +22,7 @@
   + 2022-02-01 : builtInObject(Global, 빌트인 전역 객체 함수)
   + 2022-02-02 : this Binding(this 바인딩)
   + 2022-02-03 : Execution Context(실행 컨텍스트)
+  + 2022-02-05 : Closure(클로저)
 + **HTML & CSS**
   + 2022-02-02 : HTML Tag(Review)
-  + 2022-02-03 : Meta Tag
+  + 2022-02-04 : Meta Tag

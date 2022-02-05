@@ -1012,16 +1012,51 @@
 // // 메서드 호출
 // console.log(x + y); // 3
 
-const x = 1;
+// const x = 1;
 
-function foo() {
-  const y = 2;
+// function foo() {
+//   const y = 2;
 
-  function bar() {
-    const z = 3;
-    console.log(x + y + z);
-  }
-  bar();
+//   function bar() {
+//     const z = 3;
+//     console.log(x + y + z);
+//   }
+//   bar();
+// }
+
+// foo(); // 6
+
+// const x = 1;
+
+// function outer() {
+//   const x = 10;
+//   const inner = function () {
+//     console.log(x);
+//   };
+//   return inner;
+// }
+
+// const innerFunc = outer();
+// innerFunc();
+
+const counter = (function () {
+  let count = 0;
+
+  return function (aux) {
+    count = aux(count);
+    return count;
+  };
+}());
+
+function increase(n) {
+  return ++n;
 }
 
-foo(); // 6
+function decrease(n) {
+  return --n;
+}
+
+console.log(counter(increase));
+console.log(counter(increase));
+console.log(counter(decrease));
+console.log(counter(decrease));
