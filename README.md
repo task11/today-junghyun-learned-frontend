@@ -27,3 +27,4 @@
   + 2022-02-02 : HTML Tag(Review)
   + 2022-02-04 : Meta Tag
   + 2022-02-05 : Mark Up
+  + 2022-02-06 : Sectioning Elements 올바르게 사용하기
