@@ -1039,24 +1039,70 @@
 // const innerFunc = outer();
 // innerFunc();
 
-const counter = (function () {
-  let count = 0;
+// const counter = (function () {
+//   let count = 0;
 
-  return function (aux) {
-    count = aux(count);
-    return count;
-  };
-}());
+//   return function (aux) {
+//     count = aux(count);
+//     return count;
+//   };
+// }());
 
-function increase(n) {
-  return ++n;
+// function increase(n) {
+//   return ++n;
+// }
+
+// function decrease(n) {
+//   return --n;
+// }
+
+// console.log(counter(increase));
+// console.log(counter(increase));
+// console.log(counter(decrease));
+// console.log(counter(decrease));
+
+// let input = ["a", "b", "c"];
+// let count = 0;
+
+// function permutation(arr) {
+//   // for i -> 첫 번째 index 위치시킬 요소 a or b or c [i, 0, 0]
+//   for (let i = 0; i < arr.length; i++) {
+//     // for j -> 두 번째 index 위치시킬 요소 [i, j, 0]
+//     for (let j = 0; j < arr.length; j++) {
+//       if (i === j) continue;
+//       // for j -> 세 번째 index 위치시킬 요소 [i, j, k]
+//       for (let k = 0; k < arr.length; k++) {
+//         if (i === k) continue;
+//         if (j === k) continue;
+//         console.log(arr[i], arr[j], arr[k]);
+//         count++;
+//       }
+//     }
+//   }
+// }
+
+// permutation(input);
+// console.log(count);
+
+let input = ["a", "b", "c"];
+let count = 0;
+
+// s = 시작 위치 , r = 뽑을 개수 (인덱스 기준)
+function permutation(arr, s, r) {
+  // 1. 재귀 함수를 멈춰야할 조건
+  if (s === r) {
+    count++;
+    console.log(arr.join(" ")); // 배열의 상태 출력
+    return; // 재귀 탈출
+  }
+
+  // 2. 재귀를 돌면서 수행되는 부분 (main logic)
+  for (let i = s; i < arr.length; i++) { // i가 0부터 돌면 중복하면서 뽑음
+    [arr[s], arr[i]] = [arr[i], arr[s]] // SWAP
+    permutation(arr, s + 1, r); // s 값을 증가시켜서 다음 인덱스를 선택하게
+    [arr[s], arr[i]] = [arr[i], arr[s]] // SWAP 원상 복귀
+  }
 }
 
-function decrease(n) {
-  return --n;
-}
-
-console.log(counter(increase));
-console.log(counter(increase));
-console.log(counter(decrease));
-console.log(counter(decrease));
+permutation(input, 0, 2);
+console.log(count);

@@ -30,3 +30,4 @@
   + 2022-02-06 : Sectioning Elements 올바르게 사용하기
 + **Algorithm**
   + 2022-02-07 : 알고리즘 복잡도 [TIL-알고리즘 복잡도](https://velog.io/@task11/Algorithm-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%B3%B5%EC%9E%A1%EB%8F%84%EC%8B%9C%EA%B0%84-%EB%B3%B5%EC%9E%A1%EB%8F%84#%EC%8B%9C%EA%B0%84-%EB%B3%B5%EC%9E%A1%EB%8F%84-)
+  + 2022-02-08 : 순열(Permutation) [TIL-순열(Permutation)](https://velog.io/@task11/Algorithm-%EA%B2%BD%EC%9A%B0%EC%9D%98-%EC%88%98%EC%88%9C%EC%97%B4)
