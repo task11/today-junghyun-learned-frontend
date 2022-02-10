@@ -1107,24 +1107,63 @@
 // permutation(input, 0, 2);
 // console.log(count);
 
-function add(x, y) {
-  return x + y;
-}
-function sub(x, y) {
-  return x - y;
-}
-function mul(x, y) {
-  return x * y;
-}
-function div(x, y) {
-  return x / y;
+// function add(x, y) {
+//   return x + y;
+// }
+// function sub(x, y) {
+//   return x - y;
+// }
+// function mul(x, y) {
+//   return x * y;
+// }
+// function div(x, y) {
+//   return x / y;
+// }
+
+// function calculator(callback, a, b) {
+//   return callback(a, b);
+// }
+
+// console.log(calculator(add, 12, 5));
+// console.log(calculator(sub, 12, 5));
+// console.log(calculator(mul, 12, 5));
+// console.log(calculator(div, 12, 5));
+
+// let input = [1, 2, 3, 4];
+// let count = 0;
+
+// function combination(arr) {
+//   for (let i = 0; i < arr.length; i++) {
+//     for (let j = i + 1; j < arr.length; j++) {
+//       count++;
+//     }
+//   }
+// }
+
+// combination(input);
+// console.log(count);
+
+
+let input = [1, 2, 3, 4];
+let output = [];
+let count = 0;
+
+function combinationRecursion(arr, data, s, idx, r) {
+  if (s === r) {
+    count++;
+    console.log("###########################################", data);
+    return;
+  }
+
+  for (let i = idx; arr.length - i >= r - s; i++) {
+    data[s] = arr[i];
+    console.log("data : ", data, " s : ", s, " i : ", i, " idx : ", idx);
+    combinationRecursion(arr, data, s + 1, i + 1, r);
+    console.log("RE : data : ", data, " s : ", s, " i : ", i, " idx : ", idx);
+  }
 }
 
-function calculator(callback, a, b) {
-  return callback(a, b);
-}
+combinationRecursion(input, output, 0, 0, 2);
+console.log(count);
 
-console.log(calculator(add, 12, 5));
-console.log(calculator(sub, 12, 5));
-console.log(calculator(mul, 12, 5));
-console.log(calculator(div, 12, 5));
+
