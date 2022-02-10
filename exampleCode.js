@@ -1084,25 +1084,47 @@
 // permutation(input);
 // console.log(count);
 
-let input = ["a", "b", "c"];
-let count = 0;
+// let input = ["a", "b", "c"];
+// let count = 0;
 
-// s = 시작 위치 , r = 뽑을 개수 (인덱스 기준)
-function permutation(arr, s, r) {
-  // 1. 재귀 함수를 멈춰야할 조건
-  if (s === r) {
-    count++;
-    console.log(arr.join(" ")); // 배열의 상태 출력
-    return; // 재귀 탈출
-  }
+// // s = 시작 위치 , r = 뽑을 개수 (인덱스 기준)
+// function permutation(arr, s, r) {
+//   // 1. 재귀 함수를 멈춰야할 조건
+//   if (s === r) {
+//     count++;
+//     console.log(arr.join(" ")); // 배열의 상태 출력
+//     return; // 재귀 탈출
+//   }
 
-  // 2. 재귀를 돌면서 수행되는 부분 (main logic)
-  for (let i = s; i < arr.length; i++) { // i가 0부터 돌면 중복하면서 뽑음
-    [arr[s], arr[i]] = [arr[i], arr[s]] // SWAP
-    permutation(arr, s + 1, r); // s 값을 증가시켜서 다음 인덱스를 선택하게
-    [arr[s], arr[i]] = [arr[i], arr[s]] // SWAP 원상 복귀
-  }
+//   // 2. 재귀를 돌면서 수행되는 부분 (main logic)
+//   for (let i = s; i < arr.length; i++) { // i가 0부터 돌면 중복하면서 뽑음
+//     [arr[s], arr[i]] = [arr[i], arr[s]] // SWAP
+//     permutation(arr, s + 1, r); // s 값을 증가시켜서 다음 인덱스를 선택하게
+//     [arr[s], arr[i]] = [arr[i], arr[s]] // SWAP 원상 복귀
+//   }
+// }
+
+// permutation(input, 0, 2);
+// console.log(count);
+
+function add(x, y) {
+  return x + y;
+}
+function sub(x, y) {
+  return x - y;
+}
+function mul(x, y) {
+  return x * y;
+}
+function div(x, y) {
+  return x / y;
 }
 
-permutation(input, 0, 2);
-console.log(count);
+function calculator(callback, a, b) {
+  return callback(a, b);
+}
+
+console.log(calculator(add, 12, 5));
+console.log(calculator(sub, 12, 5));
+console.log(calculator(mul, 12, 5));
+console.log(calculator(div, 12, 5));
