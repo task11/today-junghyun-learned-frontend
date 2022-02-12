@@ -34,3 +34,4 @@
   + 2022-02-07 : 알고리즘 복잡도 [TIL-알고리즘 복잡도](https://velog.io/@task11/Algorithm-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%B3%B5%EC%9E%A1%EB%8F%84%EC%8B%9C%EA%B0%84-%EB%B3%B5%EC%9E%A1%EB%8F%84#%EC%8B%9C%EA%B0%84-%EB%B3%B5%EC%9E%A1%EB%8F%84-)
   + 2022-02-08 : 순열(Permutation) [TIL-순열(Permutation)](https://velog.io/@task11/Algorithm-%EA%B2%BD%EC%9A%B0%EC%9D%98-%EC%88%98%EC%88%9C%EC%97%B4)
   + 2022-02-11 : 조합(Combination) [TIL-조합(Combination)](https://velog.io/@task11/Algorithm-%EA%B2%BD%EC%9A%B0%EC%9D%98-%EC%88%98%EC%A1%B0%ED%95%A9)
+  + 2022-02-12 : 점화식(Recurrence Relation)-등비/등차수열/팩토리얼/피보나치수열 [TIL-점화식(Fibonacci Numbers)](https://velog.io/@task11/Algorithm-%EC%A0%90%ED%99%94%EC%8B%9D%EB%93%B1%EC%B0%A8%EB%93%B1%EC%B0%A8%EC%88%98%EC%97%B4%ED%8C%A9%ED%86%A0%EB%A6%AC%EC%96%BC%ED%94%BC%EB%B3%B4%EB%82%98%EC%B9%98%EC%88%98%EC%97%B4)

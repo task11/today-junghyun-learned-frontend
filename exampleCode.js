@@ -1144,26 +1144,104 @@
 // console.log(count);
 
 
-let input = [1, 2, 3, 4];
-let output = [];
-let count = 0;
+// let input = [1, 2, 3, 4];
+// let output = [];
+// let count = 0;
 
-function combinationRecursion(arr, data, s, idx, r) {
-  if (s === r) {
-    count++;
-    console.log("###########################################", data);
-    return;
+// function combinationRecursion(arr, data, s, idx, r) {
+//   if (s === r) {
+//     count++;
+//     console.log("###########################################", data);
+//     return;
+//   }
+
+//   for (let i = idx; arr.length - i >= r - s; i++) {
+//     data[s] = arr[i];
+//     console.log("data : ", data, " s : ", s, " i : ", i, " idx : ", idx);
+//     combinationRecursion(arr, data, s + 1, i + 1, r);
+//     console.log("RE : data : ", data, " s : ", s, " i : ", i, " idx : ", idx);
+//   }
+// }
+
+// combinationRecursion(input, output, 0, 0, 2);
+// console.log(count);
+
+// let result;
+
+// function factorial(number) {
+//   if (number === 1) {
+//     return 1;
+//   }
+
+//   return factorial(number - 1) * number;
+// }
+
+// result = factorial(5);
+// console.log(result);
+// // 5! = 5 * 4 * 3 * 2 * 1
+
+
+
+// result = 0;
+
+// function recursive(s, t, number) {
+//   if (number === 1) {
+//     return s;
+//   }
+
+//   console.log(s, t, number)
+
+//   return recursive(s + t, t, number - 1);
+
+// };
+
+// result = recursive(5, 3, 5);
+// console.log(result);
+// // 5 등차수열 2간격 3회 = 5 + 2 + 2 + 2 = 11
+// // 5 등차수열 3간격 5회 = 5 + 3 + 3 + 3 + 3 + 3 = 20
+// // number : 5 , recursive(5 + 3, 3, 5);
+// // number : 4 , recursive(8 + 3, 3, 4);
+// // number : 3 , recursive(11 + 3, 3, 3);
+// // number : 2 , recursive(14 + 3, 3, 2);
+// // number : 1 , 17 반환
+
+// // 5 3 5
+// // 8 3 4
+// // 11 3 3
+// // 14 3 2
+// // 17 3 1
+// // 20
+
+// let result;
+
+// function recursive(s, t, number) {
+//   if (number === 1) {
+//     return s;
+//   }
+
+//   return recursive(s, t, number - 1) * t;
+
+// };
+
+// result = recursive(3, 2, 5);
+// console.log(result);
+
+// 3, 2간격으로 5번 : 3 * 2 * 2 * 2 * 2 = 28 
+
+let result;
+
+function fibonacci(number) {
+  if (number === 1 || number === 0) {
+    return number;
   }
 
-  for (let i = idx; arr.length - i >= r - s; i++) {
-    data[s] = arr[i];
-    console.log("data : ", data, " s : ", s, " i : ", i, " idx : ", idx);
-    combinationRecursion(arr, data, s + 1, i + 1, r);
-    console.log("RE : data : ", data, " s : ", s, " i : ", i, " idx : ", idx);
-  }
+  console.log(number);
+
+  return fibonacci(number - 1) + fibonacci(number - 2);
 }
 
-combinationRecursion(input, output, 0, 0, 2);
-console.log(count);
+result = fibonacci(6);
 
-
+console.log(result)
+// > 1, 1, 2, 3, 5, 8, 13, 21
+// 4
