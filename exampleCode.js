@@ -1228,20 +1228,297 @@
 
 // 3, 2간격으로 5번 : 3 * 2 * 2 * 2 * 2 = 28 
 
-let result;
+// let result;
 
-function fibonacci(number) {
-  if (number === 1 || number === 0) {
-    return number;
-  }
+// function fibonacci(number) {
+//   if (number === 1 || number === 0) {
+//     return number;
+//   }
 
-  console.log(number);
+//   console.log(number);
 
-  return fibonacci(number - 1) + fibonacci(number - 2);
-}
+//   return fibonacci(number - 1) + fibonacci(number - 2);
+// }
 
-result = fibonacci(6);
+// result = fibonacci(6);
 
-console.log(result)
+// console.log(result)
 // > 1, 1, 2, 3, 5, 8, 13, 21
 // 4
+
+// {
+//   '0': {
+//     value: 'one',
+//     writable: true,
+//     enumerable: true,
+//     configurable: true
+//   },
+//   '1': {
+//     value: 'two',
+//     writable: true,
+//     enumerable: true,
+//     configurable: true
+//   },
+//   length: { value: 2, writable: true, enumerable: false, configurable: false }
+// }
+
+// let nums = [1, 2, 3, 4, 5];
+
+// console.log(nums);
+
+// nums.push(6);
+// console.log(nums);
+
+// nums.pop();
+// console.log(nums);
+
+// let uname = ['김정현', '박정민', '이호섭', '최국진', '유바보'];
+// let ref;
+// ref = uname.splice(3);
+// console.log(ref);
+// console.log(uname);
+// console.log("================");
+
+// ref = uname.splice(1, 1);
+// console.log(ref);
+// console.log(uname);
+// console.log("================");
+
+// ref = uname.splice(1, 1, 'noob');
+// console.log(ref);
+// console.log(uname);
+
+// let uname = ['김정현', '박정민', '이호섭', '최국진', '유바보'];
+
+// // 1(제외) 오른쪽 출력
+// console.log(uname.slice(1));
+
+// // 3(제외) 오른쪽 출력
+// console.log(uname.slice(3));
+
+// // 1(제외) ~ 3 사이 출력
+// console.log(uname.slice(1, 3));
+
+// // -2(포함) 오른쪽 출력
+// console.log(uname.slice(-2));
+
+// // 원본 훼손 X
+// console.log(uname);
+
+// let uname = ['김정현', '박정민', '이호섭', '최국진', '유바보'];
+
+// console.log(uname.concat('noob1'));
+
+// console.log(uname.concat(['noob1', 'noob2'], 'noob3'));
+
+// console.log(uname);
+
+// [ '김정현', '박정민', '이호섭', '최국진', '유바보', 'noob1' ]
+// [ '김정현', '박정민', '이호섭', '최국진', '유바보', 'noob1', 'noob2', 'noob3' ]
+// [ '김정현', '박정민', '이호섭', '최국진', '유바보' ]
+
+// let uname = ['김정현', '박정민', '이호섭', '최국진', '유바보'];
+
+// for (let i = 0; i < uname.length; i++) {
+//   console.log(uname[i]);
+// }
+// // output : 김정현 박정민 이호섭 최국진 유바보
+// for (let name of uname) {
+//   console.log(name);
+// }
+// // output : 김정현 박정민 이호섭 최국진 유바보
+// for (let key in uname) {
+//   console.log(uname[key]);
+// }
+// // output : 김정현 박정민 이호섭 최국진 유바보
+
+// let uname = ['e', 'c', 'f', 'a', 'd', 'b', 'a'];
+
+// console.log(uname.indexOf('a')); // index : 3
+// console.log(uname.indexOf('z')); // index : -1 (존재 X)
+// console.log(uname.indexOf('a', 4)); // index : 6 (index 4 이후의 중복 item index)
+// console.log(uname.indexOf('a', uname.indexOf('a') + 1)); // index : 6 (첫 번 쨰 item의 중복 item index)
+
+// console.log(uname.lastIndexOf('a')); // index : 6 
+// console.log(uname.lastIndexOf('a', -2)); // index : 3
+
+// console.log(uname.includes('a')); // true
+// console.log(uname.includes('z')); // false
+
+// let abc = ['e', 'c', 'f', 'a', 'd', 'b', 'a'];
+// let nums = [5, 3, 6, 1, 2, 4, 7];
+
+// console.log(abc.sort());
+// console.log(nums.sort());
+
+// console.log(abc.reverse());
+// console.log(nums.reverse());
+
+// let hello = ['안', '녕', '하', '세', '요', ' ', 'join', '예제', '입니다.'];
+
+// console.log(hello.join('~')); // 안~녕~하~세~요~ ~join~예제~입니다.
+// console.log(hello.join('')); // 안녕하세요 join예제입니다.
+
+// let str = hello.join('!');
+// console.log(str); // 안!녕!하!세!요! !join!예제!입니다.
+
+// console.log(str.split('!')); // ['안', '녕', '하', '세', '요', ' ', 'join', '예제', '입니다.']
+
+// let nums = [10, 2, 4, 3, 5, 20, 7, -1, 9, 1];
+
+// nums.sort(function (x, y) {
+//   return x - y;
+// })
+
+// console.log(nums);
+
+// nums.sort(function (x, y) {
+//   return y - x;
+// })
+
+// console.log(nums);
+
+// let abc = ['e', 'c', 'f', 'a', 'd', 'F', 'b', 'A'];
+
+// abc.sort(function (x, y) {
+//   x = x.toUpperCase();
+//   y = y.toUpperCase();
+
+//   if (x > y) return 1;
+//   else if (x < y) return -1;
+//   else return 0;
+// })
+
+// console.log(abc);
+
+// let nums = [10, 2, 4, 3, 5, 20, 7, -1, 9, 1];
+// let abc = ['e', 'c', 'f', 'a', 'd', 'F', 'b', 'A'];
+
+// nums.sort(function (x, y) {
+//   if (typeof x === "string") x = x.toUpperCase();
+//   if (typeof y === "string") y = y.toUpperCase();
+
+//   return x > y ? 1 : -1;
+// });
+
+// console.log(nums);
+// console.log(abc);
+
+// const ascendingOrder = function (x, y) {
+//   if (typeof x === "string") x = x.toUpperCase();
+//   if (typeof y === "string") y = y.toUpperCase();
+
+//   return x > y ? 1 : -1;
+// }
+
+// const descendingOrder = function(x, y) {
+//   if (typeof x === "string") x = x.toUpperCase();
+//   if (typeof y === "string") y = y.toUpperCase();
+
+//   return x < y ? 1 : -1;
+// }
+
+// let abc = ['a', 'b', 'c', 'd'];
+
+// abc.forEach(function (i) {
+//   console.log(i);
+// })
+
+// abc.forEach(function (item, index) {
+//   return item * 2;
+// })
+
+// a foreach
+// b foreach
+// c foreach
+// d foreach
+// let abc = ['a', 'b', 'c', 'd'];
+
+// let abcMap = abc.map(function (item) {
+//   return item + ' map 순회';
+// })
+
+// for (let item of abcMap) {
+//   console.log(item);
+// }
+
+// a map 순회
+// b map 순회
+// c map 순회
+// d map 순회
+
+// let person = [
+//   {
+//     name: '김정현',
+//     age: 28
+//   },
+//   {
+//     name: '배윤주',
+//     age: 26
+//   },
+//   {
+//     name: '김길동',
+//     age: 16
+//   },
+//   {
+//     name: '박길동',
+//     age: 18
+//   }
+// ];
+
+// let findName = person.find(function (user) {
+//   return user.name === '김정현';
+// });
+
+// let findAge = person.find(function (user) {
+//   return user.age < 18;
+// })
+
+// console.log(findName); // { name: '김정현', age: 28 }
+// console.log(findAge); // { name: '김길동', age: 16 }
+// let person = [
+//   {
+//     name: '김정현',
+//     age: 28
+//   },
+//   {
+//     name: '배윤주',
+//     age: 26
+//   },
+//   {
+//     name: '김길동',
+//     age: 16
+//   },
+//   {
+//     name: '박길동',
+//     age: 18
+//   }
+// ];
+
+// let findAge = person.filter(function (user) {
+//   return user.age > 18;
+// })
+
+// console.log(findAge); // [ { name: '김정현', age: 28 }, { name: '배윤주', age: 26 } ]
+
+// let abc = ['a', 'b', 'c', 'd'];
+
+// let nums = [1, 2, 3, 4, 5, 6, 7];
+// let count = 0;
+
+// let sum = nums.reduce(function (acc, item, index, array) {
+//   count++
+//   console.log(acc, " ", item, " ", index);
+//   return acc + item;
+// }, 0);
+
+// console.log("count : " + count);
+
+// 0   1   0
+// 1   2   1
+// 3   3   2
+// 6   4   3
+// 10   5   4
+// 15   6   5
+// 21   7   6
+// count : 7
