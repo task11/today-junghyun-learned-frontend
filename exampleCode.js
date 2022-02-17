@@ -1522,3 +1522,28 @@
 // 15   6   5
 // 21   7   6
 // count : 7
+
+// let person = [
+//   {
+//     name: '김정현',
+//     age: 28
+//   },
+//   {
+//     name: '배윤주',
+//     age: 26
+//   },
+//   {
+//     name: '김길동',
+//     age: 16
+//   },
+//   {
+//     name: '박길동',
+//     age: 18
+//   }
+// ];
+
+// let someName = person.some(function (user) {
+//   return user.age == 28;
+// })
+
+// console.log(someName);

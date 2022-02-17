@@ -37,3 +37,4 @@
   + 2022-02-08 : 순열(Permutation) [BlogLinK: TIL-순열(Permutation)](https://velog.io/@task11/Algorithm-%EA%B2%BD%EC%9A%B0%EC%9D%98-%EC%88%98%EC%88%9C%EC%97%B4)
   + 2022-02-11 : 조합(Combination) [BlogLinK: TIL-조합(Combination)](https://velog.io/@task11/Algorithm-%EA%B2%BD%EC%9A%B0%EC%9D%98-%EC%88%98%EC%A1%B0%ED%95%A9)
   + 2022-02-12 : 점화식(Recurrence Relation)-등비/등차수열/팩토리얼/피보나치수열 [BlogLinK: TIL-점화식(Fibonacci Numbers)](https://velog.io/@task11/Algorithm-%EC%A0%90%ED%99%94%EC%8B%9D%EB%93%B1%EC%B0%A8%EB%93%B1%EC%B0%A8%EC%88%98%EC%97%B4%ED%8C%A9%ED%86%A0%EB%A6%AC%EC%96%BC%ED%94%BC%EB%B3%B4%EB%82%98%EC%B9%98%EC%88%98%EC%97%B4)
+  + 2022-02-17 : 구현: 수열 최솟값 위치 [BlogLinK: TIL-수열 최솟값 위치](https://velog.io/@task11/Algorithm-%EC%88%98%EC%97%B4-%EC%B5%9C%EC%86%9F%EA%B0%92-%EC%9C%84%EC%B9%98) & 구현: 체스 세트 [BlogLinK: TIL-체스 세트](https://velog.io/@task11/Algorithm-%EA%B5%AC%ED%98%84-%EC%B2%B4%EC%8A%A4-%EC%84%B8%ED%8A%B8)
