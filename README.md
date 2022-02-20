@@ -27,6 +27,7 @@
   + 2022-02-10 : Callback Function(콜백함수) [BlogLinK: TIL-Callback](https://velog.io/@task11/Javascript-%EC%BD%9C%EB%B0%B1-%ED%95%A8%EC%88%98Callback-Function)
   + 2022-02-14 : Array(배열과 메서드) [BlogLinK: TIL-Array](https://velog.io/@task11/Javascript-%EB%B0%B0%EC%97%B4Array)
   + 2022-02-16 : Short Circuit Evaluation(단축 평가) [BlogLink: TIL-Short Circuit Evaluation](https://velog.io/@task11/Javascript-%EB%8B%A8%EC%B6%95-%ED%8F%89%EA%B0%80Short-Circuit-Evaluation)
+  + 2022-02-20 : Prototype(프로토타입) [BlogLink: Prototype](https://velog.io/@task11/Javascript-%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85Prototype)
 + **HTML & CSS**
   + 2022-02-02 : HTML Tag(Review) 복습[TIL-HTMLTag](HTMLCSS/htmlTag.md)
   + 2022-02-04 : Meta Tag의 정의[TIL-MetaTag](HTMLCSS/metaTag.md)
