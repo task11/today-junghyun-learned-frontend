@@ -33,7 +33,7 @@
   + 2022-02-04 : Meta Tag의 정의[TIL-MetaTag](HTMLCSS/metaTag.md)
   + 2022-02-05 : Mark Up 예제 풀이 [TIL-MarkUp](HTMLCSS/markUp.md)
   + 2022-02-06 : Sectioning Elements 올바르게 사용하기 [TIL-SectioningTag](HTMLCSS/sectioningElements.md)
-+ **Algorithm**
++ **Algorithm & Data Structure**
   + 2022-02-07 : 알고리즘 복잡도 [BlogLinK: TIL-알고리즘 복잡도](https://velog.io/@task11/Algorithm-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%B3%B5%EC%9E%A1%EB%8F%84%EC%8B%9C%EA%B0%84-%EB%B3%B5%EC%9E%A1%EB%8F%84#%EC%8B%9C%EA%B0%84-%EB%B3%B5%EC%9E%A1%EB%8F%84-)
   + 2022-02-08 : 순열(Permutation) [BlogLinK: TIL-순열(Permutation)](https://velog.io/@task11/Algorithm-%EA%B2%BD%EC%9A%B0%EC%9D%98-%EC%88%98%EC%88%9C%EC%97%B4)
   + 2022-02-11 : 조합(Combination) [BlogLinK: TIL-조합(Combination)](https://velog.io/@task11/Algorithm-%EA%B2%BD%EC%9A%B0%EC%9D%98-%EC%88%98%EC%A1%B0%ED%95%A9)
@@ -41,3 +41,4 @@
   + 2022-02-17 : 구현: 수열 최솟값 위치 [BlogLinK: TIL-수열 최솟값 위치](https://velog.io/@task11/Algorithm-%EC%88%98%EC%97%B4-%EC%B5%9C%EC%86%9F%EA%B0%92-%EC%9C%84%EC%B9%98) & 구현: 체스 세트 [BlogLinK: TIL-체스 세트](https://velog.io/@task11/Algorithm-%EA%B5%AC%ED%98%84-%EC%B2%B4%EC%8A%A4-%EC%84%B8%ED%8A%B8)
   + 2022-02-18 : 구현: 두 수 최대 합 [TIL-알고리즘 구현 문제풀이](zerobase/array-realization5.js) & 구현: 일곱 난장이 [TIL-알고리즘 구현 문제풀이](zerobase/array-realization7.js) & 구현: Two Some [TIL-알고리즘 구현 문제풀이](zerobase/array-realization8.js) & 구현: OX Quiz [TIL-알고리즘 구현 문제풀이](zerobase/array-realization9.js) & 구현: 숫자 빈도수 구하기 [TIL-알고리즘 구현 문제풀이](zerobase/array-realization10.js)
   + 2022-02-19 : 구현: 달팽이 만들기 [BlogLink: TIL-달팽이 만들기](https://velog.io/@task11/Algorithm-%EA%B5%AC%ED%98%84-%EB%8B%AC%ED%8C%BD%EC%9D%B4-%EB%A7%8C%EB%93%A4%EA%B8%B0)
+  + 2022-02-21 : 구현: 연결 리스트[TIL: LinkedList]()
