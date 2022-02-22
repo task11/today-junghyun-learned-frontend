@@ -127,3 +127,49 @@ LinkedList.prototype.remove = function (value) {
 
   return current.data;
 }
+
+// removeAt() : position 위치 노드 삭제
+LinkedList.prototype.removeAt = function (position = 0) {
+  if (position < 0 || position >= this.length) {
+    return null;
+  }
+
+  let current = this.head;
+  let index = 0;
+  let prev;
+
+  if (position == 0) {
+    this.head = current.next;
+  } else {
+    while (index++ < position) {
+      prev = current;
+      current = current.next;
+    }
+    prev.next = current.next;
+  }
+
+  this.length--;
+
+  return current.data;
+}
+
+LinkedList.prototype.indexOf = function (value) {
+  let current = this.head;
+  let index = 0;
+
+  while (current != null) {
+    if (current.data === value) {
+      return index;
+    }
+
+    index++;
+    current = current.next;
+  }
+
+  return -1;
+}
+
+LinkedList.prototype.remove2 = function (value) {
+  let index = this.indexOf(value);
+  return this.removeAt(index);
+}
