@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="pseudoClassSelector.css">
+  <title>Pseudo-class Selector</title>
+</head>
+
+<body>
+
+  <h2>first-child</h2>
+  <ul>
+    <li class="movie">first-child</li>
+    <li class="movie">Zootopia</li>
+    <li class="movie">Inside Out</li>
+    <li class="movie">nth-child(4)</li>
+    <li class="movie">last-child</li>
+  </ul>
+  <hr />
+  <h2>first-of-type</h2>
+  <section>
+    <div>Go to gim</div>
+    <p class="fot-class">.fot-class:first-of-type</p>
+    <p>nth-of-type</p>
+    <p>last-of-type</p>
+    <div>NetNet</div>
+  </section>
+  <hr />
+  <h2>not()</h2>
+  <input type="text" placeholder="name">
+  <input type="email" placeholder="email">
+  <input class="passwd" type="password" placeholder="password">
+  <input type="submit">
+
+  <hr />
+  <h2>link, visited</h2>
+  <a href="http://example.com">Example Link</a>
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+/* Attribute Selector */
+
+/* 1. [attr] */
+a[target] {
+  color: red;
+}
+
+/* 2. [attr=value] */
+a[href="https://example.org"] {
+  color: indianred;
+}
+
+input[type="submit"] {
+  background-color:yellow;
+}
+
+/* 3. [attr^=value] */
+a[href^="https://"]{
+  font-style: italic;
+}
+
+
+/* 4. [attr$=value] */
+a[href$=".com"]{
+  font-size: large;
+}
+
+/* 5. [attr*=value] */
+a[href*="example"]{
+  font-weight: bold;
+}
