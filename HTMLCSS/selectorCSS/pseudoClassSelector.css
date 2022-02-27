@@ -35,7 +35,7 @@ p:nth-of-type(2n){
 }
 
 /* 7. not() */
-input:not([type="submit"]) {
+input:not([type="text"]) {
   background-color: indigo;
 }
 
@@ -45,3 +45,47 @@ a:link {
 }
 
 /* 9. visited */
+a:visited {
+  color: brown;
+}
+
+/* 10. hover */
+input[value="click me!"] {
+  background-color: skyblue;
+  border: none;
+}
+
+input[value="click me!"]:hover {
+  background-color: teal;
+  color: white;
+}
+
+/* 11. active */
+input[value="click me!"]:active {
+  background-color: yellow;
+}
+
+/* 12. focus */
+input[type="text"]:focus {
+  background-color: brown;
+}
+
+/* 13. enabled */
+input[type="text"]:enabled {
+  background-color: bisque;
+}
+
+/* 14. disabled */
+input[type="text"]:disabled {
+  background-color: red;
+}
+
+/* 15. checked */
+input[type="radio"]:checked {
+  outline: 3px solid red;
+}
+
+input[type="checkbox"]:checked {
+  outline: 3px solid blue;
+}
+

@@ -1,0 +1,33 @@
+/* 1. before */
+.focus::before {
+  content: '-';
+  color: aqua;
+}
+
+/* 2. after */
+.before-after:not(.focus)::after {
+  content: '-';
+  color: aqua;
+}
+
+/* 3. first-letter */
+.lorem::first-letter{
+  font-size: large;
+  color: red;
+}
+
+.lorem::before{
+  content: 'Before-';
+}
+
+/* 4. first-line */
+.lorem::first-line{
+  color: blue;
+}
+
+/* 5. selection */
+.lorem::selection {
+  background-color: aqua;
+  color: wheat;
+}
+
