@@ -2,9 +2,8 @@
 
 > 오늘 배우고 공부한 것들에대한 정리
 
-## _ReadMe 정리 & 예제작성_ 📖
+## _ReadMe 정리 & 예제작성_  📖
 
-------------
 + **JavaScript**
   + 2022-01-15 : Variable Hoisting(변수 호이스팅)[TIL-VariableHoisting](javascript/variableHoisting.md)
   + 2022-01-16 : Naming Convention(네이밍 규칙)[TIL-NamingConvention](javascript/namingConvention.md)
@@ -37,7 +36,7 @@
 
   ---
 
-## _Blog 포스트 정리_ 🖥
+## _Blog 포스트 정리_  🖥
 
 + **JavaScript**
   + 2022-02-09 : Recursion Function(재귀함수) [BlogLinK: TIL-Recursion](https://velog.io/@task11/Javascript-%EC%9E%AC%EA%B7%80-%ED%95%A8%EC%88%98Recursion)
