@@ -1548,3 +1548,154 @@
 
 // console.log(someName);
 
+// function bubbleSort(arr) {
+//   let swapped;
+//   for (let i = 0; i < arr.length - 1; i++) {
+//     swapped = false;
+//     for (let j = 0; j < arr.length - i - 1; j++) {
+//       if (arr[j] > arr[j + 1]) {
+//         swap(arr, j, j + 1);
+//         swapped = true;
+//       }
+//     }
+//     if (!swapped) break;
+//   }
+//   return arr;
+// }
+
+// let swap = function (arr, idx_1, idx_2) {
+//   let tmp = arr[idx_1];
+//   arr[idx_1] = arr[idx_2];
+//   arr[idx_2] = tmp;
+// }
+
+
+// console.log(bubbleSort([6, 5, 1, 3, 2]));
+
+// const swap = (arr, idx_1, idx_2) => {
+//   let tmp = arr[idx_1];
+//   arr[idx_1] = arr[idx_2];
+//   arr[idx_2] = tmp;
+// };
+
+// const ascending = (x, y) => {
+//   return x > y;
+// };
+
+// const descending = (x, y) => {
+//   return x < y;
+// };
+
+// const bubbleSort = (arr, compare) => {
+//   let swapped;
+//   for (let i = 0; i < arr.length - 1; i++) {
+//     swapped = false;
+//     for (let j = 0; j < arr.length - i - 1; j++) {
+//       if (compare(arr[j], arr[j + 1])) {
+//         swap(arr, j, j + 1);
+//         swapped = true;
+//       }
+//     }
+//     if (!swapped) break;
+//   }
+// };
+
+// input = [6, 1, 4, 5, 2, 3];
+
+// bubbleSort(input, ascending)
+
+// console.log(input);
+
+// const swap = (arr, idx_1, idx_2) => {
+//   let tmp = arr[idx_1];
+//   arr[idx_1] = arr[idx_2];
+//   arr[idx_2] = tmp;
+// }
+
+// const selectionSort = (arr) => {
+//   let minIdx;
+//   let tmp;
+//   for (let i = 0; i < arr.length - 1; i++) {
+//     tmp = Number.MAX_SAFE_INTEGER;;
+//     for (let j = i; j < arr.length; j++) {
+//       if (tmp > arr[j]) {
+//         tmp = arr[j];
+//         minIdx = j;
+//       }
+//     }
+//     swap(arr, i, minIdx);
+//   }
+// }
+
+// input = [6, 1, 4, 5, 2, 3];
+
+// selectionSort(input);
+
+// console.log(input);
+
+// const swap = (arr, idx_1, idx_2) => {
+//   let tmp = arr[idx_1];
+//   arr[idx_1] = arr[idx_2];
+//   arr[idx_2] = tmp;
+// };
+
+// const ascending = (x, y) => {
+//   return x > y;
+// };
+
+// const descending = (x, y) => {
+//   return x < y;
+// };
+
+// const selectionSort = (arr, compare) => {
+//   let minIdx;
+//   for (let i = 0; i < arr.length - 1; i++) {
+//     minIdx = i;
+//     for (let j = i + 1; j < arr.length; j++) {
+//       if (compare(arr[minIdx], arr[j])) minIdx = j;
+//     }
+//     swap(arr, i, minIdx);
+//   }
+// };
+
+// input = [6, 1, 4, 5, 2, 3, 12, 7, 20, 23, 18];
+
+// selectionSort(input, ascending);
+
+// console.log(input);
+
+
+
+const swap = (arr, idx_1, idx_2) => {
+  let tmp = arr[idx_1];
+  arr[idx_1] = arr[idx_2];
+  arr[idx_2] = tmp;
+};
+
+const ascending = (x, y) => {
+  return x > y;
+};
+
+const descending = (x, y) => {
+  return x < y;
+};
+
+const insertionSort = (arr, compare) => {
+  for (let i = 1; i < arr.length; i++) {
+    let tmp = arr[i];
+    let j;
+    for (j = i - 1; j >= 0; j--) {
+      arr[j + 1] = arr[j];
+      if (compare(tmp, arr[j])) {
+        break;
+      }
+    }
+    arr[j + 1] = tmp;
+  }
+};
+
+input = [6, 1, 4, 5, 2, 3, 12, 7, 20, 23, 18];
+
+insertionSort(input, ascending);
+
+console.log(input);

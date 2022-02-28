@@ -34,7 +34,8 @@
 + **Algorithm & Data Structure**
   + 2022-02-18 : 구현: 두 수 최대 합 [TIL-알고리즘 구현 문제풀이](zerobase/array-realization5.js) & 구현: 일곱 난장이 [TIL-알고리즘 구현 문제풀이](zerobase/array-realization7.js) & 구현: Two Some [TIL-알고리즘 구현 문제풀이](zerobase/array-realization8.js) & 구현: OX Quiz [TIL-알고리즘 구현 문제풀이](zerobase/array-realization9.js) & 구현: 숫자 빈도수 구하기 [TIL-알고리즘 구현 문제풀이](zerobase/array-realization10.js)
 
-  ---
+
+---
 
 ## _Blog 포스트 정리_  🖥
 
@@ -60,3 +61,4 @@
   + 2022-02-21 : 구현: 연결 리스트[TIL: LinkedList]()
   + 2022-02-23 : 자바스크립트로 연결리스트 구현하기[BlogLink: TIL: LinkedList realization](https://velog.io/@task11/Javascript-%EC%97%B0%EA%B2%B0-%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0)
   + 2022-02-24 : 자바스크립트로 이중 연결리스트 구현하기[BlogLink: TIL: DoublyLinkedList realization](https://velog.io/@task11/Javascript-%EC%9D%B4%EC%A4%91-%EC%97%B0%EA%B2%B0-%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0)
+  + 2022-02-28 : 정렬 알고리즘[BlogLink: TIL-Sorting](https://velog.io/@task11/Algorithm-%EC%A0%95%EB%A0%AC-Sorting)
