@@ -1666,6 +1666,75 @@
 
 
 
+// const swap = (arr, idx_1, idx_2) => {
+//   let tmp = arr[idx_1];
+//   arr[idx_1] = arr[idx_2];
+//   arr[idx_2] = tmp;
+// };
+
+// const ascending = (x, y) => {
+//   return x > y;
+// };
+
+// const descending = (x, y) => {
+//   return x < y;
+// };
+
+// const insertionSort = (arr, compare) => {
+//   for (let i = 1; i < arr.length; i++) {
+//     let tmp = arr[i];
+//     let j;
+//     for (j = i - 1; j >= 0; j--) {
+//       arr[j + 1] = arr[j];
+//       if (compare(tmp, arr[j])) {
+//         break;
+//       }
+//     }
+//     arr[j + 1] = tmp;
+//   }
+// };
+
+// input = [6, 1, 4, 5, 2, 3, 12, 7, 20, 23, 18];
+
+// insertionSort(input, ascending);
+
+// console.log(input);
+
+// const ascending = (x, y) => {
+//   return x > y;
+// };
+
+// const descending = (x, y) => {
+//   return x < y;
+// };
+
+//   if (arr.length === 1) return arr;
+
+//   let m = (arr.length / 2).toFixed(0);
+//   let left = mergeSort(arr.slice(0, m), compare);
+//   let right = mergeSort(arr.slice(m), compare);
+
+//   let i = 0;
+//   j = 0;
+//   k = 0;
+//   while (i < left.length && j < right.length) {
+//     arr[k++] = compare(left[i], right[j]) ? right[j++] : left[i++]
+//   }
+
+//   while (i < left.length) arr[k++] = left[i++];
+//   while (j < right.length) arr[k++] = right[j++];
+
+//   return arr;
+// };
+
+
+
+// input = [6, 1, 4, 5, 2, 3, 12, 7, 20, 23, 18];
+
+// mergeSort(input, ascending);
+
+// console.log(input);
+
 const swap = (arr, idx_1, idx_2) => {
   let tmp = arr[idx_1];
   arr[idx_1] = arr[idx_2];
@@ -1680,22 +1749,29 @@ const descending = (x, y) => {
   return x < y;
 };
 
-const insertionSort = (arr, compare) => {
-  for (let i = 1; i < arr.length; i++) {
-    let tmp = arr[i];
-    let j;
-    for (j = i - 1; j >= 0; j--) {
-      arr[j + 1] = arr[j];
-      if (compare(tmp, arr[j])) {
-        break;
-      }
+const quickSort = (arr, compare, s = 0, e = arr.length - 1) => {
+  let start = s;
+  let pivot = arr[e];
+
+  for (let i = s; i <= e; i++) {
+    if (compare(pivot, arr[i])) {
+      swap(arr, start, i);
+      start++;
     }
-    arr[j + 1] = tmp;
   }
+  swap(arr, start, e);
+
+  if (start - 1 > s) {
+    quickSort(arr, compare, s, start - 1);
+  }
+  if (start + 1 < e) {
+    quickSort(arr, compare, start + 1, e);
+  }
+
 };
 
 input = [6, 1, 4, 5, 2, 3, 12, 7, 20, 23, 18];
 
-insertionSort(input, ascending);
+quickSort(input, ascending);
 
 console.log(input);
