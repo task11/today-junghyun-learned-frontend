@@ -1,8 +1,8 @@
 # Today I Learned 👨‍💻 #
 
-> 오늘 배우고 공부한 것들에 대한 정리
+> 오늘 배우고 공부한 것들에 대한 정리를 기록합니다.
 
-## _ReadMe 정리 & 예제작성_  📖
+## _ReadMe 정리 or 예제작성_  📖
 
 + **JavaScript**
   + 2022-01-15 : Variable Hoisting(변수 호이스팅)[TIL-VariableHoisting](javascript/variableHoisting.md)
@@ -30,6 +30,9 @@
   + 2022-02-04 : Meta Tag의 정의[TIL-MetaTag](HTMLCSS/metaTag.md)
   + 2022-02-05 : Mark Up 예제 풀이 [TIL-MarkUp](HTMLCSS/markUp.md)
   + 2022-02-06 : Sectioning Elements 올바르게 사용하기 [TIL-SectioningTag](HTMLCSS/sectioningElements.md)
+  + 2022-02-28 : CSS float 학습 및 예제 풀이[HTMLCSS](HTMLCSS/floatCSS)
+  + 2022-03-01 : CSS position 학습 및 예제 풀이[HTMLCSS](HTMLCSS/positionCSS)
+  + 2022-03-02 : CSS transition 학습 및 예제 풀이 [HTMLCSS](HTMLCSS/transitionCSS) & CSS animation 학습 및 예제 풀이 [HTMLCSS](HTMLCSS/animationCSS)
   
 + **Algorithm & Data Structure**
   + 2022-02-18 : 구현: 두 수 최대 합 [TIL-알고리즘 구현 문제풀이](zerobase/array-realization5.js) & 구현: 일곱 난장이 [TIL-알고리즘 구현 문제풀이](zerobase/array-realization7.js) & 구현: Two Some [TIL-알고리즘 구현 문제풀이](zerobase/array-realization8.js) & 구현: OX Quiz [TIL-알고리즘 구현 문제풀이](zerobase/array-realization9.js) & 구현: 숫자 빈도수 구하기 [TIL-알고리즘 구현 문제풀이](zerobase/array-realization10.js)
@@ -47,13 +50,12 @@
   + 2022-02-20 : Prototype(프로토타입) [BlogLink: Prototype](https://velog.io/@task11/Javascript-%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85Prototype)
   + 2022-02-27 : 스코프 블로그 정리 [BlogLink: Scope](https://velog.io/@task11/Javascript-%EC%8A%A4%EC%BD%94%ED%94%84Scope)
   + 2022-03-01 : Vanilla JS로 Calendar 구현하기 (1) [BlogLink: TIL-JH Calendar project](https://velog.io/@task11/Javascript-Vanilla-JS%EB%A1%9C-%EC%BA%98%EB%A6%B0%EB%8D%94-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0-1)
+  + 2022-03-02 : Vanilla JS로 Calendar 구현하기 (2) [BlogLink: TIL-JH Calendar project](https://velog.io/@task11/Javascript-Vanilla-JS%EB%A1%9C-%EC%BA%98%EB%A6%B0%EB%8D%94-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0-2)
   
 + **HTML & CSS**
   + 2022-02-25 : HTML로 responsive image 처리하기[BlogLink: TIL-responsive image 1](https://velog.io/@task11/HTML-%EB%B0%98%EC%9D%91%ED%98%95-%EC%9D%B4%EB%AF%B8%EC%A7%80)
   + 2022-02-26 : CSS Cascadgin 원칙과 CSS Selector[BlogLink: TIL-CSS Cascading and Selector](https://velog.io/@task11/CSS-Cascading-%EC%9B%90%EC%B9%99%EA%B3%BC-CSS-Selector)
-  + 2022-02-28 : CSS float 학습 및 예제 풀이[HTMLCSS](HTMLCSS/floatCSS)
-  + 2022-03-01 : CSS position 학습 및 예제 풀이[HTMLCSS](HTMLCSS/positionCSS)
-  + 2022-03-02 : CSS transition 학습 및 예제 풀이 [HTMLCSS](HTMLCSS/transitionCSS) & CSS animation 학습 및 예제 풀이 [HTMLCSS](HTMLCSS/animationCSS)
+
 
 + **Algorithm & Data Structure**
   + 2022-02-07 : 알고리즘 복잡도 [BlogLinK: TIL-알고리즘 복잡도](https://velog.io/@task11/Algorithm-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%B3%B5%EC%9E%A1%EB%8F%84%EC%8B%9C%EA%B0%84-%EB%B3%B5%EC%9E%A1%EB%8F%84#%EC%8B%9C%EA%B0%84-%EB%B3%B5%EC%9E%A1%EB%8F%84-)
