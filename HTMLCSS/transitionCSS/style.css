@@ -1,0 +1,31 @@
+
+/* ▼ WHERE YOUR CODE BEGINS */
+
+body {
+  box-sizing: border-box;
+}
+
+.line-button {
+  position: relative;
+  width: 200px;
+  height: 100px;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+}
+
+.line-button:hover::after{
+  width: 100%;
+  background-color: aqua;
+}
+.line-button::after{
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background-color: blue;
+  transition: width 250ms ease-out, background-color 500ms ease-out;
+}
+
