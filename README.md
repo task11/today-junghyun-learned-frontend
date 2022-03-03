@@ -37,6 +37,7 @@
   
 + **Algorithm & Data Structure**
   + 2022-02-18 : 구현: 두 수 최대 합 [TIL-알고리즘 구현 문제풀이](zerobase/array-realization5.js) & 구현: 일곱 난장이 [TIL-알고리즘 구현 문제풀이](zerobase/array-realization7.js) & 구현: Two Some [TIL-알고리즘 구현 문제풀이](zerobase/array-realization8.js) & 구현: OX Quiz [TIL-알고리즘 구현 문제풀이](zerobase/array-realization9.js) & 구현: 숫자 빈도수 구하기 [TIL-알고리즘 구현 문제풀이](zerobase/array-realization10.js)
+  + 2022-02-21 : LinkedList Prototype으로 구현하기 [TIL-LinkedList realization of JS-Prototype](javascript/linkedList.js)
   + 2022-03-02 : LinkedList Class로 구현하기 [TIL-LinkedList realization of JS-Class](javascript/linkedList.js)
 
 ---
@@ -65,7 +66,6 @@
   + 2022-02-12 : 점화식(Recurrence Relation)-등비/등차수열/팩토리얼/피보나치수열 [BlogLinK: TIL-점화식(Fibonacci Numbers)](https://velog.io/@task11/Algorithm-%EC%A0%90%ED%99%94%EC%8B%9D%EB%93%B1%EC%B0%A8%EB%93%B1%EC%B0%A8%EC%88%98%EC%97%B4%ED%8C%A9%ED%86%A0%EB%A6%AC%EC%96%BC%ED%94%BC%EB%B3%B4%EB%82%98%EC%B9%98%EC%88%98%EC%97%B4)
   + 2022-02-17 : 구현: 수열 최솟값 위치 [BlogLinK: TIL-수열 최솟값 위치](https://velog.io/@task11/Algorithm-%EC%88%98%EC%97%B4-%EC%B5%9C%EC%86%9F%EA%B0%92-%EC%9C%84%EC%B9%98) & 구현: 체스 세트 [BlogLinK: TIL-체스 세트](https://velog.io/@task11/Algorithm-%EA%B5%AC%ED%98%84-%EC%B2%B4%EC%8A%A4-%EC%84%B8%ED%8A%B8)
   + 2022-02-19 : 구현: 달팽이 만들기 [BlogLink: TIL-달팽이 만들기](https://velog.io/@task11/Algorithm-%EA%B5%AC%ED%98%84-%EB%8B%AC%ED%8C%BD%EC%9D%B4-%EB%A7%8C%EB%93%A4%EA%B8%B0)
-  + 2022-02-21 : 구현: 연결 리스트[TIL: LinkedList]()
   + 2022-02-23 : 자바스크립트로 연결리스트 구현하기[BlogLink: TIL: LinkedList realization](https://velog.io/@task11/Javascript-%EC%97%B0%EA%B2%B0-%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0)
   + 2022-02-24 : 자바스크립트로 이중 연결리스트 구현하기[BlogLink: TIL: DoublyLinkedList realization](https://velog.io/@task11/Javascript-%EC%9D%B4%EC%A4%91-%EC%97%B0%EA%B2%B0-%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0)
   + 2022-02-28 : 정렬 알고리즘[BlogLink: TIL-Sorting](https://velog.io/@task11/Algorithm-%EC%A0%95%EB%A0%AC-Sorting)
