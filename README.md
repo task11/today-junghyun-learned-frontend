@@ -23,7 +23,8 @@
   + 2022-02-01 : builtInObject(Global, 빌트인 전역 객체 함수) [TIL-BuitInObject](javascript/builtInObject.md)
   + 2022-02-02 : this Binding(this 바인딩)[TIL-ThisBinding](javascript/thisBinding.md)
   + 2022-02-03 : Execution Context(실행 컨텍스트)[TIL-Excution Context](javascript/executionContext.md)
-  + 2022-02-05 : Closure(클로저)[TIL-Closure](javascript/closure.md)
+  + 2022-02-05 : Closure(클로저)[TIL-Closure](javascript/closure.md), 예제 코드 작성 [예제 코드](javascript/closure.js)
+  + 2022-03-03 : Class(클래스) 학습 및 예제 코드 작성 [TIL-Class](javascript/class.js) & Ajax 학습 및 예제 코드 작성 [TIL-Ajax](javascript/ajax.js) & Promise 학습 및 예제 코드 작성 [TIL-Promise](javascript/promise.js) & Async, Await 간단 학습 및 예제 작성 [TIL-Async Await](javascript/aysncawait.js) & EventBubbling(이벤트 버블링) 이해 및 방어코드 작성 [TIL-EventBubbling](javascript/eventBubbling.html)
 
 + **HTML & CSS**
   + 2022-02-02 : HTML Tag(Review) 복습[TIL-HTMLTag](HTMLCSS/htmlTag.md)
@@ -36,7 +37,6 @@
   
 + **Algorithm & Data Structure**
   + 2022-02-18 : 구현: 두 수 최대 합 [TIL-알고리즘 구현 문제풀이](zerobase/array-realization5.js) & 구현: 일곱 난장이 [TIL-알고리즘 구현 문제풀이](zerobase/array-realization7.js) & 구현: Two Some [TIL-알고리즘 구현 문제풀이](zerobase/array-realization8.js) & 구현: OX Quiz [TIL-알고리즘 구현 문제풀이](zerobase/array-realization9.js) & 구현: 숫자 빈도수 구하기 [TIL-알고리즘 구현 문제풀이](zerobase/array-realization10.js)
-
 
 ---
 
