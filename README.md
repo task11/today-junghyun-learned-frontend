@@ -37,8 +37,9 @@
   
 + **Algorithm & Data Structure**
   + 2022-02-18 : 구현: 두 수 최대 합 [TIL-알고리즘 구현 문제풀이](zerobase/array-realization5.js) & 구현: 일곱 난장이 [TIL-알고리즘 구현 문제풀이](zerobase/array-realization7.js) & 구현: Two Some [TIL-알고리즘 구현 문제풀이](zerobase/array-realization8.js) & 구현: OX Quiz [TIL-알고리즘 구현 문제풀이](zerobase/array-realization9.js) & 구현: 숫자 빈도수 구하기 [TIL-알고리즘 구현 문제풀이](zerobase/array-realization10.js)
-  + 2022-02-21 : LinkedList Prototype으로 구현하기 [TIL-LinkedList realization of JS-Prototype](javascript/linkedList.js)
-  + 2022-03-02 : LinkedList Class로 구현하기 [TIL-LinkedList realization of JS-Class](javascript/linkedList.js)
+  + 2022-02-21 : LinkedList Prototype으로 구현하기 [TIL-LinkedList realization of JS-Prototype](datastructure/singly-LinkedList)
+  + 2022-03-03 : LinkedList Class로 구현하기 [TIL-LinkedList realization of JS-Class](datastructure/singly-LinkedList)
+  + 2022-03-03 : Stack Class로 구현하기 [TIL-Stack realization of JS-Class](datastructure/stack)
 
 ---
 
