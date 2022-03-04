@@ -1735,43 +1735,48 @@
 
 // console.log(input);
 
-const swap = (arr, idx_1, idx_2) => {
-  let tmp = arr[idx_1];
-  arr[idx_1] = arr[idx_2];
-  arr[idx_2] = tmp;
-};
+// const swap = (arr, idx_1, idx_2) => {
+//   let tmp = arr[idx_1];
+//   arr[idx_1] = arr[idx_2];
+//   arr[idx_2] = tmp;
+// };
 
-const ascending = (x, y) => {
-  return x > y;
-};
+// const ascending = (x, y) => {
+//   return x > y;
+// };
 
-const descending = (x, y) => {
-  return x < y;
-};
+// const descending = (x, y) => {
+//   return x < y;
+// };
 
-const quickSort = (arr, compare, s = 0, e = arr.length - 1) => {
-  let start = s;
-  let pivot = arr[e];
+// const quickSort = (arr, compare, s = 0, e = arr.length - 1) => {
+//   let start = s;
+//   let pivot = arr[e];
 
-  for (let i = s; i <= e; i++) {
-    if (compare(pivot, arr[i])) {
-      swap(arr, start, i);
-      start++;
-    }
-  }
-  swap(arr, start, e);
+//   for (let i = s; i <= e; i++) {
+//     if (compare(pivot, arr[i])) {
+//       swap(arr, start, i);
+//       start++;
+//     }
+//   }
+//   swap(arr, start, e);
 
-  if (start - 1 > s) {
-    quickSort(arr, compare, s, start - 1);
-  }
-  if (start + 1 < e) {
-    quickSort(arr, compare, start + 1, e);
-  }
+//   if (start - 1 > s) {
+//     quickSort(arr, compare, s, start - 1);
+//   }
+//   if (start + 1 < e) {
+//     quickSort(arr, compare, start + 1, e);
+//   }
 
-};
+// };
 
-input = [6, 1, 4, 5, 2, 3, 12, 7, 20, 23, 18];
+// input = [6, 1, 4, 5, 2, 3, 12, 7, 20, 23, 18];
 
-quickSort(input, ascending);
+// quickSort(input, ascending);
 
-console.log(input);
+// console.log(input);
+
+console.log(name);
+name = 'kim';
+console.log(name);
+var name = 'beak'

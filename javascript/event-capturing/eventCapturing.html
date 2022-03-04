@@ -1,0 +1,52 @@
+<!-- 이벤트 캡쳐링 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Capturing</title>
+</head>
+
+<body>
+  <div>
+    <h1></h1>
+    <ul>
+      <li>노트북</li>
+      <li>모니터</li>
+      <li>책상</li>
+      <li>의자</li>
+      <li>키보드</li>
+      <li>마우스</li>
+    </ul>
+  </div>
+</body>
+
+<script>
+  const div = document.querySelector('div');
+  const ul = document.querySelector('ul');
+
+  div.addEventListener('click', (event) => {
+    console.info('div에 이벤트 발생');
+    event.target.style.background = 'blue';
+  },
+    {
+      capture: true
+    });
+
+  ul.addEventListener('click', (event) => {
+    console.info('ul에 이벤트 발생');
+    event.target.style.background = 'red';
+  });
+</script>
+
+<style>
+  div {
+    width: 300px;
+    height: 300px;
+    border: 4px solid black;
+  }
+</style>
+
+</html>

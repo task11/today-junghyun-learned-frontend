@@ -1,0 +1,72 @@
+<!-- 이벤트 위임 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Delegation</title>
+</head>
+
+<body>
+  <ul>
+    <li class="item">노트북</li>
+    <li class="item">모니터</li>
+    <li class="item">책상</li>
+    <li class="chair item stuff">의자</li>
+    <li class="item">키보드</li>
+    <li class="item">마우스</li>
+  </ul>
+</body>
+<script>
+  // const items = document.querySelectorAll('li');
+  // items.forEach((item) => item.addEventListener('click', () => console.log(event)));
+  // 위 코드처럼 모든 태그에 이벤트리스너를 달아놓는 것은 불필요한 메모리를 먹는다.
+
+  // Refactoring
+  const items = document.querySelector('ul'); // 부모의 요소를 select
+
+  items.addEventListener('click', (event) => {
+
+    // 분개 방법 1
+    // if (event.target.nodeName !== 'LI') {
+    //   return;
+    // }
+    // event.target.style.background = 'blue';
+
+    // 분개 방법 2
+    // const item = event.target.classList[0];
+    // const [item] = event.target.classList;
+
+    // if (item !== 'item') {
+    //   return;
+    // }
+
+    // event.target.style.background = 'green';
+
+    // 분개 방법 3 -> class가 여러개일 때 배열로 반환되기 떄문에 contains 메서드를 쓰는 것이 유리하다.
+    const isTargetItem = event.target.classList.contains('item');
+
+    if (!isTargetItem) {
+      return;
+    }
+
+    event.target.style.background = 'green';
+  });
+
+</script>
+
+<style>
+  ul {
+    width: 300px;
+    height: 600px;
+    border: 2px solid green;
+  }
+
+  li {
+    border: 2px solid black;
+  }
+</style>
+
+</html>
