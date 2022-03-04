@@ -41,6 +41,7 @@
   + 2022-02-21 : LinkedList Prototype으로 구현하기 [TIL-LinkedList realization of JS-Prototype](datastructure/singly-LinkedList)
   + 2022-03-03 : LinkedList Class로 구현하기 [TIL-LinkedList realization of JS-Class](datastructure/singly-LinkedList)
   + 2022-03-03 : Stack Class로 구현하기 [TIL-Stack realization of JS-Class](datastructure/stack)
+  + 2022-03-04 : Stack 문제풀이1 [TIL-Stack train](zerobase/stack-train.js)
 
 ---
 

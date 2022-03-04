@@ -20,23 +20,15 @@ class Stack {
   }
 
   push(value) {
-    let index = 0;
-    if (this.isEmpty()) {
-      this.array[index] = value;
-    } else {
-      while (index != this.array.length) {
-        index++;
-      }
-      this.array[index] = value;
-    }
+    return this.array.push(value);
   }
 
   pop() {
-    return this.array.shift();
+    return this.array.pop();
   }
 
   peak() {
-    return this.array.slice(-1)[0];
+    return this.array[this.array.length - 1];
   }
 
   size() {
