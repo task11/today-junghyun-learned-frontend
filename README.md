@@ -43,7 +43,7 @@
   + 2022-03-03 : Stack Class로 구현하기 [TIL-Stack realization of JS-Class](datastructure/stack)
   + 2022-03-04 : Stack 문제풀이1 [TIL-Stack train](zerobase/stack-train.js)
   + 2022-03-05 : Stack 문제풀이2 [TIL-Find Couple Bracket](zerobase/stack-findBracket.js)
-  + 2022-03-06 : Stack 문제풀이3 [TIL-Push Pop Dish](zerobase/stack-popDish.js)
+  + 2022-03-06 : Stack 문제풀이3 [TIL-Push Pop Dish](zerobase/stack-popDish.js) & Stack 문제풀이4 [TIL-Giraffe's View](zerobase/stack-giraffe'sView.js)
 
 ---
 
