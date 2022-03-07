@@ -26,6 +26,7 @@
   + 2022-02-05 : Closure(클로저)[TIL-Closure](javascript/closure/closure.md), 예제 코드 작성 [예제 코드](javascript/closure)
   + 2022-03-03 : Class(클래스) 학습 및 예제 코드 작성 [TIL-Class](javascript/class) & Ajax 학습 및 예제 코드 작성 [TIL-Ajax](javascript/ajax) & Promise 학습 및 예제 코드 작성 [TIL-Promise](javascript/promise) & Async, Await 간단 학습 및 예제 작성 [TIL-Async Await](javascript/async-await) & EventBubbling(이벤트 버블링) 이해 및 방어코드 작성 [TIL-EventBubbling](javascript/event-bubbling)
   + 2022-03-04 : Event Capturing(이벤트 캡쳐링) 이해 및 예제 코드 작성 [TIL-Event Capturing](javascript/event-capturing) & Event Delegation(이벤트 위임) 이해 및 예제 코드 작성 [TIL-Event Delegation](javascript/event-delegation) & Debounce(디바운스) 이해 및 예제 코드 작성 [TIL-Debounce](javascript/debouncing) & Throttle(쓰로틀) 이해 및 예제코드 작성 [TIL-Throttle](javascript/throttle) & Exception(예외처리) try-catch와 custom-error-class 생성 [TIL-Exception](javascript/exception) & this 암시/명시적 바인딩 예제 작성 [TIL-This](javascript/this)
+  + 2022-03-07 : Vanilla JS로 To-do List 구현하기 (1) [Mini Project-TodoList](https://github.com/task11/VanillaJS/tree/main/to-do-list#readme)
 
 + **HTML & CSS**
   + 2022-02-02 : HTML Tag(Review) 복습[TIL-HTMLTag](HTMLCSS/html-tag/htmlTag.md)
