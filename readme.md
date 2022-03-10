@@ -76,6 +76,7 @@
 - [스택-기차](zerobase/stack-train.js)
 - [스택-괄호세기](zerobase/stack-countBracket.js)
 - [큐-구현](zerobase/queue-makeQueue.js)
+- [큐-카드뽑기](zerobase)
 ---
 
 ## 문제집합3(Programmers)
