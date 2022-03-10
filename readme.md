@@ -70,7 +70,12 @@
 - [OX Quiz](zerobase/array-realization9.js)
 - [숫자 빈도수 구하기](zerobase/array-realization10.js)
 - [지렁이 게임](zerobase/array-realization11.js)
-
+- [연결리스트-구현](zerobase/linkedList-realization1.js)
+- [스택-괄호찾기](zerobase/stack-findBracket.js)
+- [스택-접시뽑기](zerobase/stack-popDish.js)
+- [스택-기차](zerobase/stack-train.js)
+- [스택-괄호세기](zerobase/stack-countBracket.js)
+- [큐-구현](zerobase/queue-makeQueue.js)
 ---
 
 ## 문제집합3(Programmers)
