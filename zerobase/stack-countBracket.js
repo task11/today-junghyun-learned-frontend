@@ -11,6 +11,8 @@ if (!Array.prototype.isEmpty) {
   };
 }
 
+
+
 function solution(str) {
   let result = 0;
   let stack = [];
@@ -61,6 +63,3 @@ function solution(str) {
 const input = "(()[[]])";
 
 console.log(solution(input));
-
-
-
