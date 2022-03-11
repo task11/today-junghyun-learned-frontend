@@ -73,9 +73,9 @@
     + 구현: Two Some [TIL-알고리즘 구현 문제풀이](algorithm/zerobase/array-realization8.js)
     + 구현: OX Quiz [TIL-알고리즘 구현 문제풀이](algorithm/zerobase/array-realization9.js)
     + 구현: 숫자 빈도수 구하기 [TIL-알고리즘 구현 문제풀이](algorithm/zerobase/array-realization10.js)
-  + 2022-02-21 : LinkedList Prototype으로 구현하기 [TIL-LinkedList realization of JS-Prototype](datastructure/singly-LinkedList)
-  + 2022-03-03 : LinkedList Class로 구현하기 [TIL-LinkedList realization of JS-Class](datastructure/singly-LinkedList)
-  + 2022-03-03 : Stack Class로 구현하기 [TIL-Stack realization of JS-Class](datastructure/stack)
+  + 2022-02-21 : LinkedList Prototype 으로 구현하기 [TIL-LinkedList realization of JS-Prototype](datastructure/singly-LinkedList)
+  + 2022-03-03 : LinkedList Class 로 구현하기 [TIL-LinkedList realization of JS-Class](datastructure/singly-LinkedList)
+  + 2022-03-03 : Stack Class 로 구현하기 [TIL-Stack realization of JS-Class](datastructure/stack)
   + 2022-03-04 : Stack 문제풀이1 [TIL-Stack train](algorithm/zerobase/stack-train.js)
   + 2022-03-05 : Stack 문제풀이2 [TIL-Find Couple Bracket](algorithm/zerobase/stack-findBracket.js)
   + 2022-03-06 : 
@@ -83,17 +83,18 @@
     + Stack 문제풀이4 [TIL-Giraffe's View](algorithm/zerobase/stack-giraffe'sView.js)
   + 2022-03-07 : Stack 문제풀이4 [TIL-Count Bracket](algorithm/zerobase/stack-countBracket.js)
   + 2022-03-10 : 
-    + Queue Prototype기반으로 구현하기 [TIL-Queue realization of JS-Prototype](datastructure/queue)
-    + Priority-Queue Prototype기반으로 구현하기 [TIL-Priority-Queue realization of JS-Prototype](datastructure/priority-queue)
-    + Circular-Queue Prototype기반으로 구현하기 [TIL-Circular-Queue realization of JS-Prototype](datastructure/circular-queue)
-    + Dequeue Prototype기반으로 구현하기 [TIL-Dequeue realization of JS-Prototype](datastructure/dequeue)
+    + Queue Prototype 으로 구현하기 [TIL-Queue realization of JS-Prototype](datastructure/queue)
+    + Priority-Queue Prototype 으로 구현하기 [TIL-Priority-Queue realization of JS-Prototype](datastructure/priority-queue)
+    + Circular-Queue Prototype 으로 구현하기 [TIL-Circular-Queue realization of JS-Prototype](datastructure/circular-queue)
+    + Dequeue Prototype 으로 구현하기 [TIL-Dequeue realization of JS-Prototype](datastructure/dequeue)
     + Queue 문제풀이1 [TIL-Make Queue](algorithm/zerobase/queue-makeQueue.js)
     + Queue 문제풀이2 [TIL-Pick Card](algorithm/zerobase/queue-pickCard.js)
     + Queue 문제풀이3 [TIL-Printer](algorithm/zerobase/queue-printer.js)
   + 2022-03-11 :
     + Queue 문제풀이4 [TIL-Election Represent](algorithm/zerobase/queue-electionRepresent.js)
     + Queue 문제풀이5 [TIL-Make Deque](algorithm/zerobase/deque-makeDeque.js)
-    + Dictionary Class 기반으로 구현하기 [TIL-Dictionary realization of Class](datastructure/dictionary)
+    + Dictionary Class 로 구현하기 [TIL-Dictionary realization of Class](datastructure/dictionary)
+    + HashTable(loselose-hash, djb2-hash, linear-probing-hash, chaning-hash) Class 로 구현하기 [TIL-HashTable realization of Class](datastructure/hash-table/)
 ---
 
 ## _Blog 포스트 정리_  🖥

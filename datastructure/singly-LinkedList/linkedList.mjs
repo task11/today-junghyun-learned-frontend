@@ -183,7 +183,7 @@ class Node {
 
 class LinkedList {
   constructor(head, length) {
-    this.head = head;
+    this.head = null;
     this.length = 0;
   }
 
@@ -223,6 +223,7 @@ class LinkedList {
 
   // value remove
   remove(value) {
+
     let current = this.head;
     let prev = current;
 
@@ -247,23 +248,5 @@ class LinkedList {
   }
 }
 
-let ll = new LinkedList();
-console.log(ll);
 
-ll.head = new Node(100);
-ll.length++;
-console.log(ll);
-
-ll.head.next = new Node(200);
-ll.length++;
-console.log(ll);
-
-ll.printNode();
-
-ll.append(300);
-
-ll.printNode();
-
-ll.remove(300);
-
-ll.printNode();
+export { LinkedList };
