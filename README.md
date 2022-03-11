@@ -2,7 +2,7 @@
 
 > 오늘 배우고 공부한 것들에 대한 정리를 기록합니다.
 
-## _ReadMe 정리 or 예제작성_  📖
+## _Markdown 정리 or 예제 작성_  📖
 
 + **JavaScript**
   + 2022-01-15 : Variable Hoisting(변수 호이스팅)[TIL-VariableHoisting](javascript/variable-hoisting/variableHoisting.md)
@@ -19,7 +19,7 @@
     + Short-Circuit Evaluation(단축 평가)[TIL-ShortCircuitEvaluation Start](javascript/short-circuit-evaluation/shortCircuitEvaluation.md)
   + 2022-01-21 : Short-Circuit Evaluation(단축 평가) 2[TIL-ShortCircuitEvaluation 1](javascript/shortCircuitEvaluation.md)
   + 2022-01-22 : Short-Circuit Evaluation(단축 평가) 3[TIL-ShortCircuitEvaluation 2](javascript/shortCircuitEvaluation.md)
-  + 2022-01-23 : Short-Circuit Evaluation : Opational Chaning and Nullish Coalescing(단축 평가 : 옵셔널 체이닝, 널 병합 연산자)[TIL-ShortCircuitEvaluation : Opational Chaning and Nullish Coalescing](javascript/shortCircuitEvaluation.md)
+  + 2022-01-23 : Opational Chaning and Nullish Coalescing(옵셔널 체이닝, 널 병합 연산자)[TIL Opational Chaning and Nullish Coalescing](javascript/shortCircuitEvaluation.md)
   + 2022-01-24 :
     + Computed Property Name(계산된 프로퍼티 이름)[TIL-ComputedPropertyName](javascript/property-names/computedPropertyName.md)
     + Shallow Copy & Deep Copy(얕은 복사와 깊은 복사)[TIL-ShallowCopyAndDeepCopy](javascript/shallow-and-deep-copy/shallowCopyAndDeepCopy.md)
@@ -93,6 +93,7 @@
   + 2022-03-11 :
     + Queue 문제풀이4 [TIL-Election Represent](algorithm/zerobase/queue-electionRepresent.js)
     + Queue 문제풀이5 [TIL-Make Deque](algorithm/zerobase/deque-makeDeque.js)
+    + Dictionary Class 기반으로 구현하기 [TIL-Dictionary realization of Class](datastructure/dictionary)
 ---
 
 ## _Blog 포스트 정리_  🖥
