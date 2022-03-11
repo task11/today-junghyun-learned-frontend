@@ -95,6 +95,7 @@
     + Queue 문제풀이5 [TIL-Make Deque](algorithm/zerobase/deque-makeDeque.js)
     + Dictionary Class 로 구현하기 [TIL-Dictionary realization of Class](datastructure/dictionary)
     + HashTable(loselose-hash, djb2-hash, linear-probing-hash, chaning-hash) Class 로 구현하기 [TIL-HashTable realization of Class](datastructure/hash-table/)
+    + Dictionary 문제풀이1 [TIL-Attendance Check](algorithm/zerobase/dictionary-attendanceCheck.js)
 ---
 
 ## _Blog 포스트 정리_  🖥
