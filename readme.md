@@ -78,6 +78,7 @@
 - [큐-구현](zerobase/queue-makeQueue.js)
 - [큐-카드뽑기](zerobase/queue-pickCard.js)
 - [큐-프린터](zerobase/queue-printer.js)
+- [큐-대표선출](zerobase/queue-electionRepresent.js)
 ---
 
 ## 문제집합3(Programmers)
