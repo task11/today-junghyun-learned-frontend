@@ -11,7 +11,7 @@
     + Literal(리터럴)[TIL-Literal](javascript/literal/literal.md)
     + Expression(표현식)[TIL-Expression](javascript/expression/expression.md)
   + 2022-01-18 : Statement(문)[TIL-Statement](javascript/statement/statement.md)
-  + 2022-01-19 :
+  + 2022-01-19 : 
     + Data Type(데이터 타입)[TIL-DataType](javascript/data-type/dataType.md)
     + 데이터 타입의 필요성[TIL-TheNeedForDataTypes](javascript/necessity-data-types/theNeedForDataTypes.md)
   + 2022-01-20 : 
@@ -96,6 +96,7 @@
     + Dictionary Class 로 구현하기 [TIL-Dictionary realization of Class](datastructure/dictionary)
     + HashTable(loselose-hash, djb2-hash, linear-probing-hash, chaning-hash) Class 로 구현하기 [TIL-HashTable realization of Class](datastructure/hash-table/)
     + Dictionary 문제풀이1 [TIL-Attendance Check](algorithm/zerobase/dictionary-attendanceCheck.js)
+    + Hash 문제풀이1 [TIL-Number Card](algorithm/zerobase/hash-numberCard.js)
 ---
 
 ## _Blog 포스트 정리_  🖥
