@@ -97,6 +97,7 @@
     + HashTable(loselose-hash, djb2-hash, linear-probing-hash, chaning-hash) Class 로 구현하기 [TIL-HashTable realization of Class](datastructure/hash-table/)
     + Dictionary 문제풀이1 [TIL-Attendance Check](algorithm/zerobase/dictionary-attendanceCheck.js)
     + Hash 문제풀이1 [TIL-Number Card](algorithm/zerobase/hash-numberCard.js)
+    + Hash 문제풀이2 [TIL-Vaccine](algorithm/zerobase/hash-vaccine.js)
 ---
 
 ## _Blog 포스트 정리_  🖥
