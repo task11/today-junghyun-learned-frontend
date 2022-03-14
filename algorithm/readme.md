@@ -84,3 +84,6 @@
 
 ## 문제집합3(Programmers)
 - [마라톤](programmers/marathon.js)
+- [카카오-신고결과](programmers/kakao-report-result.js)
+- [카카오-크레인](programmers/kakao-crain.js)
+- [카카오-실패율](programmers/kakao-fail-ratio.js)
