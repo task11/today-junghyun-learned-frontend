@@ -103,7 +103,9 @@
     + Programmers 문제풀이1 [TIL-Report Result](algorithm/programmers/kakao-report-result.js)
     + Programmers 문제풀이2 [TIL-Crain](algorithm/programmers/kakao-crain.js)
   + 2022-03-26 :
-    + Programmers 문제풀이3 [TIL-Plus Minus](algorithm/programmers/plus-minus.js)
+    + Programmers 문제풀이3 : 음양 더하기 [TIL-Plus Minus](algorithm/programmers/plus-minus.js)
+  + 2022-03-27 :
+    + Programmers 문제풀이4 : 두 개 뽑아서 더하기 [TIL-Two Pick Plus](algorithm/programmers/two-pick-plus.js)
 ---
 
 ## _Blog 포스트 정리_  🖥
