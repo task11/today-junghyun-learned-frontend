@@ -54,6 +54,8 @@
   + 2022-03-08 : Vanilla JS로 To-do List 구현하기(2)-Pagination 구현 [Mini Project-TodoList](https://github.com/task11/VanillaJS/tree/main/to-do-list#readme)
   + 2022-03-09 : Vanilla JS로 야구 게임 구현하기-woowa(1) [Mini Project-Baseball game](https://github.com/task11/VanillaJS/blob/main/baseball-woowa/docs/README.md)
   + 2022-03-10 : Vanilla JS로 야구 게임 구현하기-woowa(2) - 기능구현 완료 [Mini Project-Baseball game](https://github.com/task11/VanillaJS/blob/main/baseball-woowa/docs/README.md)
+  + 2022-03-28 : Vanilla JS로 계산기 구현하기 (1) [Mini Project-Calculator](https://github.com/task11/minirepo-vanilla-javascript-frontend/blob/main/README.md)
+  + 2022-03-29 : Vanilla JS로 계산기 구현하기 (2) [Mini Project-Calculator](https://github.com/task11/minirepo-vanilla-javascript-frontend/blob/main/README.md)
 
 + **HTML & CSS**
   + 2022-02-02 : HTML Tag(Review) 복습[TIL-HTMLTag](HTMLCSS/html-tag/htmlTag.md)
