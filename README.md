@@ -112,6 +112,8 @@
     + 알고리즘 문제풀이 : 올바른 괄호(스택) [TIL-Correct bracket](algorithm/section6/step1.js)
   + 2022-04-01 :
     + 알고리즘 문제풀이 : 괄호 문자 제거(스택) [TIL-Bracket String Remove](algorithm/section6/step2.js)
+  + 2022-04-02 :
+    + 알고리즘 문제풀이 : 부분 연속 수열 [TIL-Continuous Sequence](algorithm/section5/step3.js)
 ---
 
 ## _Blog 포스트 정리_  🖥
