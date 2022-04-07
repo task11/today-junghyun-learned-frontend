@@ -116,6 +116,8 @@
     + 알고리즘 문제풀이 : 부분 연속 수열 [TIL-Continuous Sequence](algorithm/section5/step3.js)
   + 2022-04-04 :
     + 알고리즘 문제풀이 : k번 째 작은 수 [TIL-Find kth Number](algorithm/recursion/find-kth-number.js)
+  + 2022-04-07 :
+    + 알고리즘 문제풀이 : 인형 뽑기 [TIL-Pick Doll](algorithm/section6/step3.js)
   
 ---
 
