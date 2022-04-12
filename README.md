@@ -99,26 +99,18 @@
     + HashTable(loselose-hash, djb2-hash, linear-probing-hash, chaning-hash) Class 로 구현하기 [TIL-HashTable realization of Class](datastructure/hash-table/)
     + Dictionary 문제풀이1 [TIL-Attendance Check](algorithm/zerobase/dictionary-attendanceCheck.js)
     + Hash 문제풀이1 [TIL-Number Card](algorithm/zerobase/hash-numberCard.js)
-  + 2022-03-12 :
-    + Hash 문제풀이2 [TIL-Vaccine](algorithm/zerobase/hash-vaccine.js)
+  + 2022-03-12 : Hash 문제풀이2 [TIL-Vaccine](algorithm/zerobase/hash-vaccine.js)
   + 2022-03-13 : 
     + Programmers 문제풀이1 [TIL-Report Result](algorithm/programmers/kakao-report-result.js)
     + Programmers 문제풀이2 [TIL-Crain](algorithm/programmers/kakao-crain.js)
-  + 2022-03-26 :
-    + Programmers 문제풀이3 : 음양 더하기 [TIL-Plus Minus](algorithm/programmers/plus-minus.js)
-  + 2022-03-27 :
-    + Programmers 문제풀이4 : 두 개 뽑아서 더하기 [TIL-Two Pick Plus](algorithm/programmers/two-pick-plus.js)
-  + 2022-03-31 : 
-    + 알고리즘 문제풀이 : 올바른 괄호(스택) [TIL-Correct bracket](algorithm/section6/step1.js)
-  + 2022-04-01 :
-    + 알고리즘 문제풀이 : 괄호 문자 제거(스택) [TIL-Bracket String Remove](algorithm/section6/step2.js)
-  + 2022-04-02 :
-    + 알고리즘 문제풀이 : 부분 연속 수열 [TIL-Continuous Sequence](algorithm/section5/step3.js)
-  + 2022-04-04 :
-    + 알고리즘 문제풀이 : k번 째 작은 수 [TIL-Find kth Number](algorithm/recursion/find-kth-number.js)
-  + 2022-04-07 :
-    + 알고리즘 문제풀이 : 인형 뽑기 [TIL-Pick Doll](algorithm/section6/step3.js)
-  
+  + 2022-03-26 : Programmers 문제풀이3 : 음양 더하기 [TIL-Plus Minus](algorithm/programmers/plus-minus.js)
+  + 2022-03-27 : Programmers 문제풀이4 : 두 개 뽑아서 더하기 [TIL-Two Pick Plus](algorithm/programmers/two-pick-plus.js)
+  + 2022-03-31 : 알고리즘 문제풀이 - 올바른 괄호(스택) [TIL-Correct bracket](algorithm/section6/step1.js)
+  + 2022-04-01 : 알고리즘 문제풀이 - 괄호 문자 제거(스택) [TIL-Bracket String Remove](algorithm/section6/step2.js)
+  + 2022-04-02 : 알고리즘 문제풀이 - 부분 연속 수열 [TIL-Continuous Sequence](algorithm/section5/step3.js)
+  + 2022-04-04 : 알고리즘 문제풀이 - k번 째 작은 수 [TIL-Find kth Number](algorithm/recursion/find-kth-number.js)
+  + 2022-04-07 : 알고리즘 문제풀이 - 인형 뽑기 [TIL-Pick Doll](algorithm/section6/step3.js)
+  + 2022-04-12 : 알고리즘 문제풀이 - 에라토스테네스의 체 [TIL-Pick Doll](algorithm/section6/step3.js)
 ---
 
 ## _Blog 포스트 정리_  🖥
