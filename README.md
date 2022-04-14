@@ -67,6 +67,7 @@
   + 2022-03-02 :
     + CSS transition 학습 및 예제 풀이 [HTMLCSS](HTMLCSS/css-transition)
     + CSS animation 학습 및 예제 풀이 [HTMLCSS](HTMLCSS/css-animation)
+  + 2022-04-14 : slide animation 구현 [HTMLCSS](HTMLCSS/slide-animation)
   
 + **Algorithm & Data Structure**
   + 2022-02-18 :
