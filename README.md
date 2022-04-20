@@ -146,3 +146,4 @@
   + 2022-02-23 : 자바스크립트로 연결리스트 구현하기[BlogLink: TIL: LinkedList realization](https://velog.io/@task11/Javascript-%EC%97%B0%EA%B2%B0-%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0)
   + 2022-02-24 : 자바스크립트로 이중 연결리스트 구현하기[BlogLink: TIL: DoublyLinkedList realization](https://velog.io/@task11/Javascript-%EC%9D%B4%EC%A4%91-%EC%97%B0%EA%B2%B0-%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0)
   + 2022-02-28 : 정렬 알고리즘[BlogLink: TIL-Sorting](https://velog.io/@task11/Algorithm-%EC%A0%95%EB%A0%AC-Sorting)
+  + 2022-04-21 : 큐: 프린터 (프로그래머스 Lv2) [BlogLink: TIL-큐 문제 풀이(Printer)](https://velog.io/@task11/Algorithm-%ED%81%90-%ED%94%84%EB%A6%B0%ED%84%B0-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Lv2)
