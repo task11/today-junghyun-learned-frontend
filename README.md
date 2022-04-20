@@ -125,6 +125,7 @@
   + 2022-02-27 : 스코프 블로그 정리 [BlogLink: Scope](https://velog.io/@task11/Javascript-%EC%8A%A4%EC%BD%94%ED%94%84Scope)
   + 2022-03-01 : Vanilla JS로 Calendar 구현하기 (1) [BlogLink: TIL-JH Calendar project](https://velog.io/@task11/Javascript-Vanilla-JS%EB%A1%9C-%EC%BA%98%EB%A6%B0%EB%8D%94-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0-1)
   + 2022-03-02 : Vanilla JS로 Calendar 구현하기 (2) [BlogLink: TIL-JH Calendar project](https://velog.io/@task11/Javascript-Vanilla-JS%EB%A1%9C-%EC%BA%98%EB%A6%B0%EB%8D%94-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0-2)
+  + 2022-04-20 : DOM(Document Object Model) [BlogLink: DOM(Document Object Model)](https://velog.io/@task11/Javascript-DOMDocument-Object-Model)
   
 + **HTML & CSS**
   + 2022-02-25 : HTML로 responsive image 처리하기[BlogLink: TIL-responsive image 1](https://velog.io/@task11/HTML-%EB%B0%98%EC%9D%91%ED%98%95-%EC%9D%B4%EB%AF%B8%EC%A7%80)
