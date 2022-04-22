@@ -152,4 +152,5 @@
   + 2022-04-22
     + 힙: 최소 배상 비용 (프로그래머스 Lv2) [BlogLink: TIL-힙 문제 풀이(Minimum compensation cost)](https://velog.io/@task11/Algorithm-%ED%9E%99-%EB%B0%B0%EC%83%81%EB%B9%84%EC%9A%A9%EC%B5%9C%EC%86%8C%ED%99%94-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Lv2)
     + 트라이: 자동완성 (프로그래머스 Lv4) [BlogLink: TIL-힙 문제 풀이(Automatic-completion)](https://velog.io/@task11/Algorithm-%ED%8A%B8%EB%9D%BC%EC%9D%B4-3%EC%B0%A8-%EC%9E%90%EB%8F%99%EC%99%84%EC%84%B1-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Lv4)
+    + 이진탐색: 입국심사 (프로그래머스 Lv3) [BlogLink: TIL-이진탐색 문제 풀이(Passport-control)](https://velog.io/@task11/Algorithm-%EC%9D%B4%EC%A7%84%ED%83%90%EC%83%89-%EC%9E%85%EA%B5%AD%EC%8B%AC%EC%82%AC-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Lv3)
   
