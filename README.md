@@ -151,4 +151,5 @@
     + 해쉬: 베스트 앨범 (프로그래머스 Lv3) [BlogLink: TIL-해쉬 문제 풀이(Best Album)](https://velog.io/@task11/Algorithm-%ED%95%B4%EC%89%AC-%EB%B2%A0%EC%8A%A4%ED%8A%B8-%EC%95%A8%EB%B2%94-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Lv3)
   + 2022-04-22
     + 힙: 최소 배상 비용 (프로그래머스 Lv2) [BlogLink: TIL-힙 문제 풀이(Minimum compensation cost)](https://velog.io/@task11/Algorithm-%ED%9E%99-%EB%B0%B0%EC%83%81%EB%B9%84%EC%9A%A9%EC%B5%9C%EC%86%8C%ED%99%94-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Lv2)
+    + 트라이: 자동완성 (프로그래머스 Lv4) [BlogLink: TIL-힙 문제 풀이(Automatic-completion)](https://velog.io/@task11/Algorithm-%ED%8A%B8%EB%9D%BC%EC%9D%B4-3%EC%B0%A8-%EC%9E%90%EB%8F%99%EC%99%84%EC%84%B1-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Lv4)
   
