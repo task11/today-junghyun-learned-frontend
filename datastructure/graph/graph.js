@@ -22,3 +22,4 @@ graphList[3].push(2);
 graphList[4].push(0);
 
 console.log(graphList);
+
