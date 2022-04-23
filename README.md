@@ -156,4 +156,5 @@
   + 2022-04-23
     + 그래프: 가장 먼 노드 (프로그래머스 Lv3) [BlogLink: TIL-BFS 문제 풀이(Farthest-node)](https://velog.io/@task11/Algorithm-%EA%B7%B8%EB%9E%98%ED%94%84BFS-%EA%B0%80%EC%9E%A5-%EB%A8%BC-%EB%85%B8%EB%93%9C-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Lv3)
     + 그리디: 큰 수 만들기 (프로그래머스 Lv3) [BlogLink: TIL-그리디 문제 풀이(Farthest-node)](https://velog.io/@task11/Algorithm-%ED%81%B0-%EC%88%98-%EB%A7%8C%EB%93%A4%EA%B8%B0-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Lv3)
+    + 큐 : 기능 개발 (프로그래머스 Lv2) [BlogLink: TIL-큐 문제 풀이(App-dev)](https://velog.io/@task11/Algorithm-%EA%B8%B0%EB%8A%A5-%EA%B0%9C%EB%B0%9C-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Lv2)
   
