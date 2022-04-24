@@ -115,6 +115,7 @@
   + 2022-04-24
     + 알고리즘 문제풀이 - 로또의 최고 순위와 취저 순위 [TIL-구현 문제 풀이(Lottos)](algorithm/programmers/realize/lotto.js)
     + 알고리즘 문제풀이 - 키패드 누르기 [TIL-구현 문제 풀이(Lottos)](algorithm/programmers/realize/keypad.js)
+    + 알고리즘 문제풀이 - 숫자 문자열과 영단어 [TIL-구현 문제 풀이(String-number)](algorithm/programmers/realize/string-number.js)
 ---
 
 ## _Blog 포스트 정리_  🖥
