@@ -114,7 +114,7 @@
   + 2022-04-12 : 알고리즘 문제풀이 - 에라토스테네스의 체 [TIL-Pick Doll](algorithm/section6/step3.js)
   + 2022-04-24
     + 알고리즘 문제풀이 - 로또의 최고 순위와 취저 순위 [TIL-구현 문제 풀이(Lottos)](algorithm/programmers/realize/lotto.js)
-    
+    + 알고리즘 문제풀이 - 키패드 누르기 [TIL-구현 문제 풀이(Lottos)](algorithm/programmers/realize/keypad.js)
 ---
 
 ## _Blog 포스트 정리_  🖥
