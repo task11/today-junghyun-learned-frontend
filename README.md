@@ -123,6 +123,7 @@
     + 알고리즘 문제풀이 - K번째 수 [TIL-정렬 문제 풀이(Kth-num)](/algorithm/programmers/sort/kth-num.js)
   + 2022-04-27
     + 알고리즘 문제풀이 - H-Index [TIL-정렬 문제 풀이(H-index)](/algorithm/programmers/sort/h-index.js)
+    + 알고리즘 문제풀이 - 체육복 [TIL-그리디 문제 풀이(workout-clothes](/algorithm/programmers/greedy/workout-clothes.js)
 ---
 
 ## _Blog 포스트 정리_  🖥
