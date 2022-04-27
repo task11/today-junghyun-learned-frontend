@@ -124,6 +124,7 @@
   + 2022-04-27
     + 알고리즘 문제풀이 - H-Index [TIL-정렬 문제 풀이(H-index)](/algorithm/programmers/sort/h-index.js)
     + 알고리즘 문제풀이 - 체육복 [TIL-그리디 문제 풀이(workout-clothes](/algorithm/programmers/greedy/workout-clothes.js)
+    + 알고리즘 문제풀이 - 조이스틱 [TIL-그리디 문제 풀이(joy-stick](/algorithm/programmers/brute%20force/joy-stick.js)
 ---
 
 ## _Blog 포스트 정리_  🖥
