@@ -126,6 +126,8 @@
     + 알고리즘 문제풀이 - 체육복 [TIL-그리디 문제 풀이(workout-clothes](/algorithm/programmers/greedy/workout-clothes.js)
     + 알고리즘 문제풀이 - 조이스틱 [TIL-그리디 문제 풀이(joy-stick](/algorithm/programmers/brute%20force/joy-stick.js)
     + 알고리즘 문제풀이 - 구명보트 [TIL-그리디 문제 풀이(Life-boat)](/algorithm/programmers/greedy/life-boat.js)
+  + 2022-04-28
+    + 알고리즘 문제풀이 - 신규 아이디 추천 [TIL-문자열 문제 풀이(Recommend-id)](/algorithm/programmers/realize/recommend-id.js)
 ---
 
 ## _Blog 포스트 정리_  🖥
