@@ -121,6 +121,8 @@
     + 알고리즘 문제풀이 - 오픈채팅방 [TIL-구현 문제 풀이(Open-chat)](/algorithm/programmers/realize/open-chat.js)
   + 2022-04-26
     + 알고리즘 문제풀이 - K번째 수 [TIL-정렬 문제 풀이(Kth-num)](/algorithm/programmers/sort/kth-num.js)
+  + 2022-04-27
+    + 알고리즘 문제풀이 - H-Index [TIL-정렬 문제 풀이(H-index)](/algorithm/programmers/sort/h-index.js)
 ---
 
 ## _Blog 포스트 정리_  🖥
