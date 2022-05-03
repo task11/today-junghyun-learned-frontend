@@ -128,6 +128,8 @@
     + 알고리즘 문제풀이 - 구명보트 [TIL-그리디 문제 풀이(Life-boat)](/algorithm/programmers/greedy/life-boat.js)
   + 2022-04-28
     + 알고리즘 문제풀이 - 신규 아이디 추천 [TIL-문자열 문제 풀이(Recommend-id)](/algorithm/programmers/realize/recommend-id.js)
+  + 2022-05-03
+    + 알고리즘 문제풀이 - 타켓 넘버 [TIL-dfs 문제 풀이(Target-number](/algorithm//programmers//bfs-dfs/target-number.js)
 ---
 
 ## _Blog 포스트 정리_  🖥
