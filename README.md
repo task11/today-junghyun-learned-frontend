@@ -131,6 +131,8 @@
   + 2022-05-03
     + 알고리즘 문제풀이 - 타켓 넘버 [TIL-dfs 문제 풀이(Target-number](/algorithm//programmers//bfs-dfs/target-number.js)
     + 알고리즘 문제풀이 - 메뉴 리뉴얼 [TIL-조합 문제 풀이(menu-renewal)](/algorithm/programmers/realize/menu-renewal.js)
+  + 2022-05-04
+    + 알고리즘 문제풀이 - x만큼 간격이 있는 n개의 숫자 [TIL-구현 문제 풀이(x-nLength](/algorithm/programmers/realize/x-nlength.js) 
 ---
 
 ## _Blog 포스트 정리_  🖥
