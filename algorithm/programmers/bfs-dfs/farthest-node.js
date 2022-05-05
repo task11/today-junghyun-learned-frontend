@@ -33,6 +33,8 @@ function solution(node, vertex) {
     graphMatrix[m].push(n);
   }
 
+  console.log(graphMatrix);
+
   const distance = Array(node + 1).fill(0);
   distance[1] = 1;
 
