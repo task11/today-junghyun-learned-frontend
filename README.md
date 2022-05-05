@@ -133,7 +133,9 @@
     + 알고리즘 문제풀이 - 메뉴 리뉴얼 [TIL-조합 문제 풀이(menu-renewal)](/algorithm/programmers/realize/menu-renewal.js)
   + 2022-05-04
     + 알고리즘 문제풀이 - x만큼 간격이 있는 n개의 숫자 [TIL-구현 문제 풀이(x-nLength)](/algorithm/programmers/realize/x-nlength.js) 
-    + 알고리즘 문제풀이 - 문자열 압축 [TIL-구현 문제 풀이(String-compressor)](/algorithm/programmers/realize/string-compressor.js) 
+    + 알고리즘 문제풀이 - 문자열 압축 [TIL-구현 문제 풀이(String-compressor)](/algorithm/programmers/realize/string-compressor.js)
+  + 2022-05-05
+    + 알고리즘 문제풀이 - n과m(1) [TIL-백트래킹 문제 풀이(n-m-1)](/algorithm/baekjoon/bfs-dfs/n-m-1.js)
 ---
 
 ## _Blog 포스트 정리_  🖥
