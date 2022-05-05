@@ -3,14 +3,15 @@
 
 // 1부터 N까지 자연수 중에서 M개를 고른 수열
 // 같은 수를 여러 번 골라도 된다.
-//   입력
-// 첫째 줄에 자연수 N과 M이 주어진다. (1 ≤ M ≤ N ≤ 7);
+// 고른 수열은 비내림차순이어야 한다.
+// 길이가 K인 수열 A가 A1 ≤ A2 ≤ ... ≤ AK-1 ≤ AK를 만족하면, 비내림차순이라고 한다.
+// 입력
+// 첫째 줄에 자연수 N과 M이 주어진다. (1 ≤ M ≤ N ≤ 8)
 
 // 출력
-// 한 줄에 하나씩 문제의 조건을 만족하는 수열을 출력한다.중복되는 수열을 여러 번 출력하면 안되며, 각 수열은 공백으로 구분해서 출력해야 한다.
+// 한 줄에 하나씩 문제의 조건을 만족하는 수열을 출력한다. 중복되는 수열을 여러 번 출력하면 안되며, 각 수열은 공백으로 구분해서 출력해야 한다.
 
-// 수열은 사전 순으로 증가하는 순서로 출력해야 한다.;
-
+// 수열은 사전 순으로 증가하는 순서로 출력해야 한다.
 
 const input = [3, 3];
 const N = input.shift();
@@ -20,21 +21,21 @@ const visited = Array.from({ length: N });
 let result = "";
 let output = [];
 
-function dfs(count) {
+function dfs(idx, count) {
   if (count === M) {
     result += `${output.join(" ")}\n`;
     return;
   }
 
-  for (let i = 0; i < N; i++) {
+  for (let i = idx; i < N; i++) {
     visited[i] = true;
     output.push(i + 1);
-    dfs(count + 1);
+    dfs(i, count + 1);
     output.pop();
     visited[i] = false;
   }
 }
 
-dfs(0);
+dfs(0, 0);
 
 console.log(result.trim());
