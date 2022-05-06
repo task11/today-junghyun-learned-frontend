@@ -144,7 +144,8 @@
     + 알고리즘 문제풀이 - n과m(7) [TIL-dfs 문제 풀이(n-m-7)](/algorithm/baekjoon/bfs-dfs/n-m-7.js)
     + 알고리즘 문제풀이 - n과m(8) [TIL-dfs 문제 풀이(n-m-8)](/algorithm/baekjoon/bfs-dfs/n-m-8.js)
     + 알고리즘 문제풀이 - n과m(9) [TIL-dfs 문제 풀이(n-m-9)](/algorithm/baekjoon/bfs-dfs/n-m-9.js)
-    + 알고리즘 문제풀이 - 124나라 [TIL-문자열 문제 풀이(124-city](/algorithm/programmers/realize/124-city.js)
+    + 알고리즘 문제풀이 - 짝지어 제거하기 [TIL-문자열 문제 풀이(couple-remove](/algorithm/programmers/realize/couple-remove.js)
+
 ---
 
 ## _Blog 포스트 정리_  🖥
