@@ -1,3 +1,4 @@
+
 // 문제
 // 자연수 N과 M이 주어졌을 때, 아래 조건을 만족하는 길이가 M인 수열을 모두 구하는 프로그램을 작성하시오.
 
@@ -13,29 +14,30 @@
 
 // 수열은 사전 순으로 증가하는 순서로 출력해야 한다.
 
-const input = [[4, 2], [9, 8, 7, 1]];
+const input = [[4, 2], [9, 7, 9, 1]];
 const N = input[1].sort((a, b) => a - b);
 const M = input[0][1];
 
 const visited = Array.from({ length: N.length });
-let result = "";
+let result = [];
 let output = [];
 
-function dfs(idx, count) {
+function dfs(count) {
   if (count === M) {
-    result += `${output.join(" ")}\n`;
+    result.push(`${output.join(' ')} \n`);
     return;
   }
 
-  for (let i = idx; i < N.length; i++) {
+  for (let i = 0; i < N.length; i++) {
+    if (visited[i] === true) continue;
     visited[i] = true;
     output.push(N[i]);
-    dfs(i, count + 1);
+    dfs(count + 1);
     output.pop();
     visited[i] = false;
   }
 }
 
-dfs(0, 0);
-console.log(result.trim());
+dfs(0);
 
+console.log([... new Set(result)].join(""));
