@@ -147,6 +147,8 @@
     + 알고리즘 문제풀이 - n과m(9) [TIL-dfs 문제 풀이(n-m-9)](/algorithm/baekjoon/bfs-dfs/n-m-9.js)
     + 알고리즘 문제풀이 - 짝지어 제거하기 [TIL-문자열 문제 풀이(couple-remove](/algorithm/programmers/realize/couple-remove.js)
     + 알고리즘 문제풀이 - 행렬 테두리 회전하기 [TIL-그래프 문제 풀이(matrix-rotation](/algorithm/programmers/graph/matrix-rotation.js)
+  + 2022-05-07
+    + 알고리즘 문제풀이 - 보석 쇼핑 [TIL-투포인터 문제 풀이(jewelry-shopping](/algorithm/programmers/two-pointer/jewelry-shopping.js)
 
 ---
 
