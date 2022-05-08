@@ -149,6 +149,8 @@
     + 알고리즘 문제풀이 - 행렬 테두리 회전하기 [TIL-그래프 문제 풀이(matrix-rotation](/algorithm/programmers/graph/matrix-rotation.js)
   + 2022-05-07
     + 알고리즘 문제풀이 - 보석 쇼핑 [TIL-투포인터 문제 풀이(jewelry-shopping](/algorithm/programmers/two-pointer/jewelry-shopping.js)
+  + 2022-05-08
+    + 알고리즘 문제풀이 - 캐시 [TIL-큐 문제 풀이(cash](/algorithm/programmers/stack-queue/cash.js)
 
 ---
 
