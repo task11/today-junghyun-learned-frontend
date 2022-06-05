@@ -6,17 +6,33 @@
   + prototype-based : 프로토타입 기반
   + **OOP(Object Oriented Programming) : 객체지향 프로그래밍**
 
-_**자바스크립트를 이루고 있는 거의 모든 것이 객체다.(원시 값 제외)**_
+ES6의 클래스는 기존 프로토타입 기반 패턴의 `문법적 설탕`이라고 볼 수 있다.
+
 
 #
 
 ## OOP(객체 지향 프로그래밍) ##
+
+_**자바스크립트를 이루고 있는 거의 모든 것이 객체다.(원시 값 제외)**_
 
 여러 개의 독립적인 단위, 객체의 집합으로 프로그램을 표현하는 프로그래밍 패러다임.
 
 사람은 이름, 나이, 성별, 주소 등 다양한 속성을 갖는다.
 
 구현하려는 프로그램에 사람의 "이름"과 "나이" 속성이 필요하다고하면, 이것들만 추려서 표현하는 것을 **추상화(abstraction)** 라고한다.
+
+```javascript
+const person = {
+  name: 'Kim',
+  address: 'Seoul',
+
+  getName(){
+    return 'Kim';
+  }
+}
+
+console.log(person) // {name: 'Kim', address: 'Seoul'}
+```
 
 > 객체의 정의 : **상태(state) -> 프로퍼티** 와 **동작(behavior) -> 메서드** 로 이루어져 있다.
   + 속성을 통해 여러 개의 값을 하나의 단위로 구성한 복합적인 자료구조
@@ -120,7 +136,7 @@ _**__proto__ 접근자 프로퍼티는 객체가 직접 소유하는 프로퍼�
 
 <img width="215" alt="스크린샷 2022-01-31 오후 3 38 31" src="https://user-images.githubusercontent.com/89209626/151749500-2b5fd5f6-8f29-499e-96c4-efdb8f211859.png">
 
-_프로토타입 체인에서 프로퍼티를 검색할 때 무한루프에 빠지지 않게._
+_위 그림은 서로가 자신의 프로토타입이 되는 비정상적인 프로토타입이다. 위 처럼 프로토타입 체인에서 프로퍼티를 검색할 때 무한루프에 빠지지 않게 해야한다._
 
 > __proto__ 접근자 프로퍼티를 코드 내에서 직접 사용하는 것을 권장하지는 않는다.
 
@@ -140,33 +156,40 @@ _프로토타입 체인에서 프로퍼티를 검색할 때 무한루프에 빠�
 
 #
 
-~~## 리터럴 표기법으로 생성된 객체의 생성자 함수와 프로토타입 ##~~
+## 리터럴 표기법으로 생성된 객체의 생성자 함수와 프로토타입 ##
 
-~~리터럴 표기법에 의해 생성된 객체는 프로토타입의 constructor 프로퍼티가 가리키는 생성자 함수가 객체를 생성한 생성자 함수가 아닐 수도 있다.~~
 
-~~**Example Code (리터럴 표기법으로 생성된 객체의 constructor 프로퍼티) :**~~
+**Example Code (리터럴 표기법으로 생성된 객체의 constructor 프로퍼티) :**
 ```javascript
+
 // obj 객체 : 리터럴 표기법으로 생성
 const obj = {};
 
 // obj 객체의 생성자 함수는 Object 생성자 함수이다.
-console.log(obj.constructor === Object); // trur
+console.log(obj.constructor === Object); // true
 ```
 
-~~다음 ECMAScript 사양을 보자.~~
+위 예제 코드의 obj 객체는 Object 생성자 함수로 생성한 객체가 아니라 객체 리터럴로 생성된 객체이다. 그러나 obj 객체는 Object 생성자 함수와 constructor 프로퍼티로 연결되어있다.
+
+다음 ECMAScript 사양을 보면.
 
 <img width="479" alt="스크린샷 2022-01-31 오후 3 58 15" src="https://user-images.githubusercontent.com/89209626/151751303-7283e639-9b25-4095-bfca-9e05a6f67737.png">
 
-~~2번을 보면~~
-> ~~Object 생성자 함수에 인수를 전달하지 않거나, undefined 또는 null을 인수로 전달하면서 호출하면 내부적으로는 추상 연산 OrdinaryObjectCreate를 호출하여 Object.prototype을 프로토타입으로 갖는 빈 객체를 생성한다.~~
+2번:
+> Object 생성자 함수에 인수를 전달하지 않거나, undefined 또는 null을 인수로 전달하면서 호출하면 내부적으로는 추상 연산 OrdinaryObjectCreate를 호출하여 Object.prototype을 프로토타입으로 갖는 빈 객체를 생성한다.
 
-~~라고 되어있다.~~
+라고 되어있다.
+
+**리터럴 표기법에 의해 생성된 객체도 가상적인 생성자 함수를 갖는다.**
+
+결론은 프로토타입과 생성자 함수는 단독으로 존재할 수 없고 쌍으로 존재한다.
 
 #
 
 ## 프로토타입의 생성 시점 ##
 
 프로토타입은 생성자 함수가 생성되는 시점에 같이 생성된다.
+(생성자 함수로 호출할 수 없는 함수는 프로토타입이 생성되지 않는다.)
 
 ### 1) 사용자 정의 생성자 함수 ###
 > 함수 정의가 평가되어 함수 객체를 생성하는 시점에 프로토타입이 생성된다.
@@ -174,7 +197,7 @@ _**런타임 이전에 자바스크립트 엔진에서 호이스팅된 함수를
 
 ### 2) 빌트인 생성자 함수 ###
 > Object, String, Number 등의 빌트인 생성자 함수들은 전역 객체가 생성되는 시점에 모든 프로토타입이 생성된다.
-_**런타임 이전에 자바스크립트 엔진에서 전영 객체를 생성한다. 이때 프로토타입이 같이 생성된다.**_
+_**런타임 이전에 자바스크립트 엔진에서 전역 객체를 생성한다. 이때 프로토타입이 같이 생성된다.**_
   + 클라이언트 사이드 환경(브라우저)에서의 전역 객체 : window
   + 서버 사이드 환경(node)에서의 전역 객체 : global
 
@@ -182,10 +205,35 @@ _**런타임 이전에 자바스크립트 엔진에서 전영 객체를 생성�
 
 ## 객체 생성 방식과 프로토타입의 결정 ##
 
+프로토타입은 OrdinaryObjectCreate에 전달되는 인수에 의해 결정된다.
+(OrdinaryObjectCreate는 객체의 프로토타입을 생성해주는 추상 연산이다.)
+
 객체의 생성 방법 :
   + 객체 리터럴         : OrdinaryObjectCreate에 전달되는 프로토타입은 Object.prototype이다.
+  ```javascript
+  const obj = {x: 1};
+  ```
   + Object 생성자 함수  : OrdinaryObjectCreate에 전달되는 프로토타입은 Object.prototype이다.
+  ```javascript
+  const obj = new Object();
+  ```
   + 생성자 함수         : OrdinaryObjectCreate에 전달되는 프로토타입은 생성자 함수의 prototype 프로퍼티에 바인딩되어 있는 객체다.
+  ```javascript
+  function Person(name){
+    this.name = name;
+  }
+
+  const me = new Person('Kim');
+  //{name: 'Kim'}
+  
+  Person.prototype.sayHi = function(){
+    console.log(`Hi~ I'm ${this.name}`);
+  };
+
+  const you = new Person('Lee');
+
+  you.sayHi(); // Hi~ I'm Lee
+  ```
   + Object.create 메서드
   + 클래스(ES6)
 
@@ -249,7 +297,7 @@ delete me.sayHello;
 me.sayHello(); // Hi ~ My name is Kim
 
 // 이번에는 프로토타입 메서드를 삭제한다.
-delete me.sayHello; // 하위 객체를 통한 상위 프로퍼티의 set 액세스는 혀용 불가하다.
+delete me.sayHello; // 하위 객체를 통한 상위 프로퍼티의 set 액세스는 허용 불가하다.
 
 // 삭제 되지 않았다.
 me.sayHello(); // Hi ~ My name is Kim
@@ -290,6 +338,7 @@ const Person = (function (){
 
   // 생성자 함수의 prototype 프로퍼티를 통해 프로토타입을 교체
   Person.prototype = {
+    // 객체 리터럴에 constructor 프로퍼티가 없어서 생성자 함수 간의 연결이 파괴된다
     sayHello(){
       console.log(`Hi~ My name is ${this.name}`);
     }
@@ -310,7 +359,7 @@ Person.prototype에 객체 리터럴을 할당한 것은 Person 생성자 함수
 // 프로퍼티를 교체하면 constructor 프로퍼티와 생성자 함수 간의 연결이 파괴된다.
 console.log(me.constructor === Person) // false;
 
-// 프로토타입 체인을 따라 Object.prototype의 constructor 프로퍼탁 검색된다. ( 상위 부모 : Object.prototype)
+// 프로토타입 체인을 따라 Object.prototype의 constructor 프로퍼티가 검색된다. ( 상위 부모 : Object.prototype)
 console.log(me.constructor === Object) // true;
 ```
 
@@ -358,10 +407,13 @@ function Person(name) {
 
 const me = new Person('kim');
 
+// 프로토 타입으로 교체할 객체
 const parent = {};
 
+// me 객체는 프로토타입이 교체되어 프로토타입과 생선자 함수 간의 연결이 파괴되었음.
 Object.setPrototypeOf(me, parent);
 
+// Person 생성자 함수와 parent 객체는 연결되어 있지 않다.
 console.log(Person.prototype === parent); // false
 console.log(parent.constructor); // Object
 
@@ -413,19 +465,19 @@ console.log(isInstanceof(me, Object)); // true
 
 ### Object.create 직접 상속 ###
 
+Object.create 메서드도 다른 객체 생성 방식과 마찬가지로 추상 연산 `OrdinaryObjectCreate`를 호출한다.
+
 Object.create 메서드의 첫 번째 매개변수에는 생성할 객체의 프로토타입으로 지정할 객체를 전달한다. 두 번째 매개변수에는 생성할 객체의 프로퍼티 키와 프로퍼티 디스크립터 객체로 이뤄진 객체를 전달한다.
 
 **Example Code (Object.create) :**
 ```javascript
-// Object.create(prototype[, propertiesObject]);
-
 // Object.create 직접 상속
 // 프로토타입이 null인 객체를 생성한다. 생성된 객체는 프로토타입 체인의 종점에 위치한다.
 // obj -> null
 let obj = Object.create(null);
 console.log(Object.getPrototypeOf(obj) === null); // true
 // Object.prototype을 상속받지 못한다.
-//console.log(obj.toString()); // TypeError: obj.toString is not a function
+console.log(obj.toString()); // TypeError: obj.toString is not a function
 
 // obj -> Object.prototype -> null
 // obj = {}; 와 동일하다.
@@ -441,6 +493,7 @@ obj = Object.create(Object.prototype, {
 // 위 코드는 아래와 동일
 // obj = Object.create(Object.prototype);
 // obj.x = 1;
+
 console.log(obj.x);
 console.log(Object.getPrototypeOf(obj) === Object.prototype); // true
 
@@ -503,7 +556,7 @@ const obj = {
   __proto__: myProto
 };
 
-/* 위 코드는 아래오 ㅏ동일
+/* 위 코드는 아래와 동일
 const obj = Object.create(myProtom {
   y: {value: 20, ......}
 })
@@ -666,3 +719,20 @@ for (const key in person) {
   + Object.values  : 객체 자신이 열거 가능한 프로퍼티 **값을** 배열로 반환한다.
   + Object.entries : 객체 자신이 열거 가능한 프로퍼티 **키와 값의 쌍을** 배열로 반환한다. _**ES6..**_
 
+
+## 프로토 타입 기반 코드 예제
+프로토타입 기반으로 Queue 구현
+
+```javascript
+function Queue(array) {
+  this.array = array ? array : [];
+}
+
+Queue.prototype.enqueue = function (element) {
+  return this.array.push(element);
+};
+
+Queue.prototype.dequeue = function () {
+  return this.array.shift();
+};
+```

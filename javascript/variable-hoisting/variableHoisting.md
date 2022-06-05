@@ -21,5 +21,20 @@ score = 60;
 
 ```
 
+## 호이스팅의 예시
+
+```javascript
+// Output: undefined
+console.log(example);
+
+// Variable assignment
+example = 80;
+
+// Output: 80
+console.log(example);
+
+// Variable declaration
+var example;
+```
 
 ### _+자세한 내용은 추후 업데이트 예정_
