@@ -1,3 +1,29 @@
+# This #
+
+객체의 동작을 나타내는 `메서드`는 자신이 속한 객체의 상태, 즉 프로퍼티를 참조하고 변경할 수 있어야 한다. 이때 메서드가 자신이 속한 객체의 프로퍼티를 참조하려면 먼저 자신이 속한 객체를 가리키는 식별자를 참조할 수 있어야 한다.
+
+```javascript
+const circle = {
+  // 프로퍼티 : 데이터
+  radius: 5,
+  getDiameter(){
+    // 자신이 속한 객체인 circle을 참조할 수 있어야함.
+    return 2*circle.radius; 
+  }
+};
+
+console.log(circle.getDiameter());
+```
+
+```javascript
+function Circle(radius){
+  // 이 시점에서는 생성자 함수 자신이 생성할 인스턴스를 가리키는 식별자를 알 수 없다.
+  ???.radius = radius;
+} 
+```
+
+자신이 속한 객체 또는 자신이 생성할 인스턴스를 가리키는 특수한 식별자가 필요한데 이것이 `this`이다.
+
 # This binding (this 바인딩) #
 
 this 바인딩은 함수 호출 방식에 따라 동적으로 결정된다.
