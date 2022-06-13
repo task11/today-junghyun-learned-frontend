@@ -27,7 +27,7 @@ const person = {
   address: 'Seoul',
 
   getName(){
-    return 'Kim';
+    return this.name;
   }
 }
 
