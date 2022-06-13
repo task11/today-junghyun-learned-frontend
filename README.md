@@ -151,6 +151,8 @@
     + 알고리즘 문제풀이 - 보석 쇼핑 [TIL-투포인터 문제 풀이(jewelry-shopping](/algorithm/programmers/two-pointer/jewelry-shopping.js)
   + 2022-05-08
     + 알고리즘 문제풀이 - 캐시 [TIL-큐 문제 풀이(cash](/algorithm/programmers/stack-queue/cash.js)
+  + 2022-06-13
+    + 알고리즘 문제풀이 - 동전0 [TIL-그리디 문제 풀이(백준-11047)](/algorithm//baekjoon/greedy/11047.js)
 
 ---
 
