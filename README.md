@@ -153,6 +153,8 @@
     + 알고리즘 문제풀이 - 캐시 [TIL-큐 문제 풀이(cash](/algorithm/programmers/stack-queue/cash.js)
   + 2022-06-13
     + 알고리즘 문제풀이 - 동전0 [TIL-그리디 문제 풀이(백준-11047)](/algorithm//baekjoon/greedy/11047.js)
+  + 2022-06-15
+    + 알고리즘 문제풀이 - 회의실 배정 [TIL-그리디 문제 풀이(백준-1931)](/algorithm//baekjoon/greedy/1931.js)
 
 ---
 
