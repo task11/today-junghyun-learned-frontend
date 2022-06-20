@@ -157,7 +157,8 @@
     + 알고리즘 문제풀이 - 회의실 배정 [TIL-그리디 문제 풀이(백준-1931)](/algorithm//baekjoon/greedy/1931.js)
   + 2022-06-16
     + 알고리즘 문제풀이 - 수 묶기 [TIL-그리디 문제 풀이(백준-1744)](/algorithm//baekjoon/greedy/1744.js)
-
+  + 2022-06-20
+    + 알고리즘 문제풀이 - 암호 만들기 [TIL-브루트포스 문제 풀이(백준-1759)](/algorithm/baekjoon/brouteforce/1759.js)
 ---
 
 ## _Blog 포스트 정리_  🖥
