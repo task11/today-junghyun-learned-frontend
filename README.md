@@ -159,6 +159,8 @@
     + 알고리즘 문제풀이 - 수 묶기 [TIL-그리디 문제 풀이(백준-1744)](/algorithm//baekjoon/greedy/1744.js)
   + 2022-06-20
     + 알고리즘 문제풀이 - 암호 만들기 [TIL-브루트포스 문제 풀이(백준-1759)](/algorithm/baekjoon/brouteforce/1759.js)
+  + 2022-06022
+    + 알고리즘 문제풀이 - 단어 수학 [TIL-브루트포스 제 풀이(백준-1339)](/algorithm//baekjoon//brouteforce/1339.js)
 ---
 
 ## _Blog 포스트 정리_  🖥

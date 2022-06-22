@@ -14,11 +14,10 @@
 
 // 수열은 사전 순으로 증가하는 순서로 출력해야 한다.
 
-const input = [[4, 2], [9, 7, 9, 1]];
-const N = input[1].sort((a, b) => a - b);
-const M = input[0][1];
+const [N, M, ...arr] = require('fs').readFileSync('/dev/stdin').toString().trim().split(/\s+/).map(v => +v);
+arr.sort((a, b) => a - b);
 
-const visited = Array.from({ length: N.length });
+const visited = Array.from({ length: N });
 let result = [];
 let output = [];
 
@@ -28,10 +27,10 @@ function dfs(count) {
     return;
   }
 
-  for (let i = 0; i < N.length; i++) {
+  for (let i = 0; i < N; i++) {
     if (visited[i] === true) continue;
     visited[i] = true;
-    output.push(N[i]);
+    output.push(arr[i]);
     dfs(count + 1);
     output.pop();
     visited[i] = false;
